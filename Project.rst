@@ -16,92 +16,92 @@ Purpose::
 
 	Students - 
 
-		1.Providing information about the current and proposed programs under Innovation Hub.
+		1. Providing information about the current and proposed programs under Innovation Hub.
 	
-		2.Publish one's own Curriculum Vitae, paper presentations and past work.
+		2. Publish one's own Curriculum Vitae, paper presentations and past work.
 		
-		3.Get placement updates and aptitude check.
+		3. Get placement updates and aptitude check.
 
 	Faculty -
 
-		1.Information about the students activities in Innovation Hub.
+		1. Information about the students activities in Innovation Hub.
 
- 		2.To know about their overall performance.
+ 		2. To know about their overall performance.
 	
 	Guest -
 
-		1.Can view the Student's Curriculum Vitae and their activities.
+		1. Can view the Student's Curriculum Vitae and their activities.
 
 Modules::
 
-	1.Wise Module - 
+	1. WISE Module - 
 
-		*Documentation of the WISE program.
+		* Documentation of the WISE program.
 		
-		*Track of events.
+		* Track of events.
 	
 
-	2.Assistive Technology Lab - 
+	2. Assistive Technology Lab Module - 
 
 		
 
-	3.Incubation Center -
+	3. Incubation Center Module-
 
 	 
 	
-	4.CV Module -
+	4. CV Module -
 
-		*Student can upload her CV and make upgrades.
+		* Student can upload her CV and make upgrades.
 
-		*Depending upon certain criterias, she can get her CV rated.
+		* Depending upon certain criteria, she can get her CV rated.
 
-		*Faculty and guests are allowed to review and comment on CVs.
+		* Faculty and guests are allowed to review and comment on CVs.
 
-		*Suggestions to improve CVs.
+		* Suggestions to improve CVs.
 
 		
-	5.Placement Module -
+	5. Placement Module -
 
-		*Procedure for placements.
+		* Procedure for placements.
 
-		*Helping aids like Aptitude tests.
+		* Helping aids like Aptitude tests.
 
-		*Providing eligibility criterias.
+		* Providing eligibility criteria.
 
-	6.Discussion Forum -
+	6. Discussion Forum -
 
-		*Discussion among students.
+		* Discussion among students.
 
-		*Allows faculty and student interaction.
+		* Allows faculty and student interaction.
 
 
-	7.Admin Module -
+	7. Admin Module -
 
-		*Maintains the list of students enrolled in various courses.
+		* Maintains the list of students enrolled in various courses.
 
-		*As an interface between student and faculty.
+		* As an interface between student and faculty.
 
-		*Updating regularly.
+		* Updating regularly.
 
-	8.Guest Module - 
+	8. Guest Module - 
 
-		*Allowed to view courses available under Innovation Hub.
+		* Allowed to view courses available under Innovation Hub.
 
-		*Can examine student CVs and their activities.
+		* Can examine student CVs and their activities.
 
-	9.Student proceedings -
+	9. Student proceedings -
 
-		*Upload their paper presentations and other work.
+		* Upload their paper presentations and other work.
 
 Tools::
 
-	1.Java
+	1. Java
 
-	2.Servlets
+	2. Servlets
 
-	3.Postgresql
+	3. Postgresql
 
-	4.HTML5
+	4. HTML5
 
-	5.Javascript
+	5. Javascript
 
