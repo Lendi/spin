@@ -1,0 +1,14 @@
+digraph spin{
+	coverpage->WISE;
+	coverpage->ATL;
+	coverpage->IC;
+	coverpage->login;
+	login->studentpage;
+	login->facultypage;
+	login->adminpage;
+	studentpage->cv;
+	studentpage->placement;
+	facultypage->Studentinfo;
+	adminpage->notify;
+	adminpage->policychange;
+};
