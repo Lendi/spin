@@ -1,0 +1,52 @@
+create table mod_struct(rollno varchar(10), name varchar(30), mod1 BOOLEAN, mod2 BOOLEAN , mod3 BOOLEAN, mod4 BOOLEAN, mod5 BOOLEAN, mod6 BOOLEAN, mod7 BOOLEAN, mod8 BOOLEAN);
+
+desc mod_struct;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| rollno | varchar(10) | YES  |     | NULL    |       |
+| name   | varchar(30) | YES  |     | NULL    |       |
+| mod1   | tinyint(1)  | YES  |     | NULL    |       |
+| mod2   | tinyint(1)  | YES  |     | NULL    |       |
+| mod3   | tinyint(1)  | YES  |     | NULL    |       |
+| mod4   | tinyint(1)  | YES  |     | NULL    |       |
+| mod5   | tinyint(1)  | YES  |     | NULL    |       |
+| mod6   | tinyint(1)  | YES  |     | NULL    |       |
+| mod7   | tinyint(1)  | YES  |     | NULL    |       |
+| mod8   | tinyint(1)  | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+
+insert into mod_struct values('12wh1a1230', 'Lendi Vihari', 1, 1, 1, 1, 1, 0, 0, 0);
+insert into mod_struct values('12wh1a1236', 'Charvitha', 1, 1, 1, 1, 1, 1, 0, 0);
+insert into mod_struct values('12wh1a0541', 'Damini', 1, 0, 1, 1, 0, 1, 0, 0);
+
+select * from mod_struct;
++------------+--------------+------+------+------+------+------+------+------+------+
+| rollno     | name         | mod1 | mod2 | mod3 | mod4 | mod5 | mod6 | mod7 | mod8 |
++------------+--------------+------+------+------+------+------+------+------+------+
+| 12wh1a1230 | Lendi Vihari |    1 |    1 |    1 |    1 |    1 |    0 |    0 |    0 |
+| 12wh1a1236 | Charvitha    |    1 |    1 |    1 |    1 |    1 |    1 |    0 |    0 |
+| 12wh1a0541 | Damini       |    1 |    0 |    1 |    1 |    0 |    1 |    0 |    0 |
++------------+--------------+------+------+------+------+------+------+------+------+
+
+
+
+select name from mod_struct where mod1 = 1;
++--------------+
+| name         |
++--------------+
+| Lendi Vihari |
+| Charvitha    |
+| Damini       |
++--------------+
+
+
+
+
+select name from mod_struct where mod5 = True;
++--------------+
+| name         |
++--------------+
+| Lendi Vihari |
+| Charvitha    |
++--------------+
