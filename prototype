@@ -1,0 +1,85 @@
+desc student;
+
++----------------+-------------+------+-----+---------+-------+
+| Field          | Type        | Null | Key | Default | Extra |
++----------------+-------------+------+-----+---------+-------+
+| rollno         | varchar(10) | NO   | PRI |         |       |
+| name           | varchar(30) | YES  |     | NULL    |       |
+| branch         | varchar(10) | YES  |     | NULL    |       |
+| contact        | varchar(15) | YES  |     | NULL    |       |
+| parent_contact | varchar(15) | YES  |     | NULL    |       |
++----------------+-------------+------+-----+---------+-------+
+
+select * from student;
+
++------------+--------------------------+--------+------------+----------------+
+| rollno     | name                     | branch | contact    | parent_contact |
++------------+--------------------------+--------+------------+----------------+
+| 12WH1A0501 | Allada Lakshmi Sowjanya  | CSE    | 9959699108 | 9959699108     |
+| 12WH1A0502 | Ande Vineela             | CSE    | 8801736495 | 9701186863     |
+| 12WH1A0503 | Alluri Neelima Devi      | CSE    | 8142098181 | 8886229158     |
+| 12WH1A0504 | Anumandla Kruthi Meghana | CSE    | 9542735982 | 9393831091     |
+| 12WH1A0505 | Baruvani Mounika         | CSE    | 9866492597 | 8885500112     |
+| 12WH1A0506 | Balusu Bhuvana           | CSE    | 8008035555 | 9000395555     |
++------------+--------------------------+--------+------------+----------------+
+
+
+
+desc module_details;
+
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| mod_name | varchar(20) | NO   | PRI |         |       |
+| mod_id   | int(2)      | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+select * from module_details;
+
++----------+--------+
+| mod_name | mod_id |
++----------+--------+
+| c        |      1 |
+| python   |      2 |
+| java     |      2 |
+| web dev  |      3 |
+| vcs      |      4 |
+| web app  |      5 |
+| g30      |      5 |
++----------+--------+
+
+
+desc enrolment;
+
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| rollno   | varchar(10) | NO   | PRI |         |       |
+| marks    | int(4)      | YES  |     | NULL    |       |
+| status   | varchar(9)  | NO   |     |         |       |
+| mod_name | varchar(20) | NO   | PRI |         |       |
+| mod_id   | int(2)      | NO   | PRI | 0       |       |
++----------+-------------+------+-----+---------+-------+
+
+select * from enrolment;
+
++------------+-------+---------+----------+--------+
+| rollno     | marks | status  | mod_name | mod_id |
++------------+-------+---------+----------+--------+
+| 12WH1A0501 |    90 | CLEARED | c        |      1 |
+| 12WH1A0501 |    78 | CLEARED | python   |      2 |
+| 12WH1A0501 |    89 | CLEARED | web dev  |      3 |
+| 12WH1A0501 |    89 | CLEARED | vcs      |      4 |
+| 12WH1A0501 |    66 | CLEARED | g30      |      5 |
+| 12WH1A0502 |    30 | CLEARED | c        |      1 |
+| 12WH1A0502 |    70 | CLEARED | java     |      2 |
+| 12WH1A0502 |    70 | FAILED  | web app  |      5 |
+| 12WH1A0503 |    78 | CLEARED | c        |      1 |
+| 12WH1A0503 |    88 | CLEARED | python   |      2 |
+| 12WH1A0503 |    60 | CLEARED | web app  |      5 |
+| 12WH1A0503 |    50 | CLEARED | vcs      |      4 |
+| 12WH1A0503 |    80 | CLEARED | web dev  |      3 |
+| 12WH1A0504 |    70 | CLEARED | c        |      1 |
+| 12WH1A0504 |    70 | DROPPED | python   |      2 |
+| 12WH1A0505 |    10 | DROPPED | c        |      1 |
++------------+-------+---------+----------+--------+
