@@ -2,16 +2,4 @@ digraph spin{
 	landing_page->technical;
 	landing_page->non_technical;
 	landing_page->report;
-	technical->WISE;
-	technical->ATL;
-	technical->IC;
-	technical->general;
-	non_technical->PD;
-	non_technical->cultural_assistance;
-	report->overall_performers;
-	report->branch_wise;
-	report->program_wise;
-	general->tech_events;
-	general->placement;
-	general->latest;
 };
