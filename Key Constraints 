@@ -1,0 +1,21 @@
+alter table student_details add primary key(rollno);
+
+ALTER TABLE student_details add CONSTRAINT branch_br FOREIGN KEY (branch) REFERENCES branch_details (branch);
+
+
+
+alter table branch_details add primary key(branch);
+
+alter table wise_module add primary key(mod_code);
+
+alter table status add primary key(status);
+ 
+
+
+alter table wise_enrollment add primary key(rollno, mod_code);
+
+ALTER TABLE wise_enrollment add CONSTRAINT rollno_ro FOREIGN KEY (rollno) REFERENCES student_details(rollno);
+
+ALTER TABLE wise_enrollment add CONSTRAINT status_st FOREIGN KEY (status) REFERENCES status(status);
+
+ALTER TABLE wise_enrollment add CONSTRAINT mod_code_mo FOREIGN KEY (mod_code) REFERENCES wise_module(mod_code);
