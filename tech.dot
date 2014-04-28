@@ -1,0 +1,9 @@
+digraph tech{
+	technical->WISE;
+        technical->ATL;
+        technical->IC;
+        technical->tech_events;
+        technical->placement;
+        technical->latest;
+};
+                                   

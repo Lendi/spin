@@ -1,0 +1,5 @@
+digraph nontech{
+       	non_technical->PD;
+        non_technical->cultural_assistance;
+};
+                                    

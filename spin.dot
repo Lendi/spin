@@ -1,0 +1,5 @@
+digraph spin{
+	landing_page->technical;
+	landing_page->non_technical;
+	landing_page->report;
+};

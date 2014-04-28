@@ -1,0 +1,1225 @@
+create table branch_details(branch char(5), branch_id char(2));
+insert into branch_details values ('CSE', 5), ('IT', 12), ('ECE',4), ('EEE', 2);
+
+desc branch_details;
+
++-----------+---------+------+-----+---------+-------+
+| Field     | Type    | Null | Key | Default | Extra |
++-----------+---------+------+-----+---------+-------+
+| branch    | char(5) | YES  |     | NULL    |       |
+| branch_id | char(2) | YES  |     | NULL    |       |
++-----------+---------+------+-----+---------+-------+
+
+select * from branch_details;
+
++--------+-----------+
+| branch | branch_id |
++--------+-----------+
+| CSE    | 5         |
+| IT     | 12        |
+| ECE    | 4         |
+| EEE    | 2         |
++--------+-----------+
+
+
+
+create table status(status char(10));
+insert into status values('PASSED'),('DROPPED'),('FAILED');
+
+desc status;
+
++--------+----------+------+-----+---------+-------+
+| Field  | Type     | Null | Key | Default | Extra |
++--------+----------+------+-----+---------+-------+
+| status | char(10) | YES  |     | NULL    |       |
++--------+----------+------+-----+---------+-------+
+
+ select * from status;
+
++---------+
+| status  |
++---------+
+| PASSED  |
+| DROPPED |
+| FAILED  |
++---------+
+
+
+
+create table student_details(rollno char(10), name char(50), branch char(5), phno char(15), parent_phno char(15));
+
+desc student_details;
+
++-------------+----------+------+-----+---------+-------+
+| Field       | Type     | Null | Key | Default | Extra |
++-------------+----------+------+-----+---------+-------+
+| rollno      | char(10) | YES  |     | NULL    |       |
+| name        | char(50) | YES  |     | NULL    |       |
+| branch      | char(5)  | YES  |     | NULL    |       |
+| phno        | char(15) | YES  |     | NULL    |       |
+| parent_phno | char(15) | YES  |     | NULL    |       |
++-------------+----------+------+-----+---------+-------+
+
+
+insert into wise_enrollment values('12WH1A0501','Allada Lakshmi Sowjanya','CSE','9959699108','9959699108');
+insert into wise_enrollment values('12WH1A0502','Ande Vineela','CSE','8801736495','9701186863');
+insert into wise_enrollment values('12WH1A0503','Alluri Neelima Devi','CSE','8142098181','8886229158');
+insert into wise_enrollment values('12WH1A0504','Anumandla Kruthi Meghana','CSE','9542735982','9393831091');
+insert into wise_enrollment values('12WH1A0505','Baruvani Mounika','CSE','9866492597','8885500112');
+insert into wise_enrollment values('12WH1A0506','Balusu Bhuvana','CSE','8008035555','9000395555');
+insert into wise_enrollment values('12WH1A0507','Bollineni Tejaswi','CSE','9959976045','9959976045');
+insert into wise_enrollment values('12WH1A0508','Burgula Purna Bhanu Sriyana','CSE','8897743241','9642397097');
+insert into wise_enrollment values('12WH1A0509','Challa Bindu','CSE','9866308999','8897790406');
+insert into wise_enrollment values('12WH1A0510','Chadalavada Sirisha','CSE','7893873689','7893873689');
+insert into wise_enrollment values('12WH1A0511','Chityala Manasa','CSE','8008520059','9492002804');
+insert into wise_enrollment values('12WH1A0512','Chilakala Sowmya','CSE','9494235642','9440392909');
+insert into wise_enrollment values('12WH1A0513','Chukkannagari Shreya Reddy','CSE','8977716313','9059591596');
+insert into wise_enrollment values('12WH1A0514','Kammakomati Damini Satya','CSE','9666484158','9491049306');
+insert into wise_enrollment values('12WH1A0515','Dandu Geetha Manasa','CSE','','8121789992');
+insert into wise_enrollment values('12WH1A0516','Desharaju Akhila','CSE','','9989831939');
+insert into wise_enrollment values('12WH1A0517','Dhande Sushma','CSE','9676861286','9676861286');
+insert into wise_enrollment values('12WH1A0518','Desetty Vasantha Deepika','CSE',' ','');
+insert into wise_enrollment values('12WH1A0519','Shaik Fathima Bhanu','CSE','','9951539087');
+insert into wise_enrollment values('12WH1A0520','Gadigae Vineesha','CSE','','9160896887');
+insert into wise_enrollment values('12WH1A0521','Ganduri Chandana','CSE','7702444452','9849178350');
+insert into wise_enrollment values('12WH1A0522','Gadipalli Sowmya','CSE','7416556638','9502320329');
+insert into wise_enrollment values('12WH1A0523','Gimka Ashalatha','CSE','8143468229','9492428570');
+insert into wise_enrollment values('12WH1A0524','Ganti Soumya Ravali','CSE','9963453043','7702060593');
+insert into wise_enrollment values('12WH1A0525','Golkonda Hyndavi','CSE','8121963619','9490868519');
+insert into wise_enrollment values('12WH1A0526','Gunanya Siri','CSE','8790562727','9177190001');
+insert into wise_enrollment values('12WH1A0527','Kalidindi Subha Sri','CSE','8341244444','9866644666');
+insert into wise_enrollment values('12WH1A0528','Gunnareddy Manasa','CSE','9059628611','8142506993');
+insert into wise_enrollment values('12WH1A0529','Jakkaraju Mrudhula','CSE','9642446951','8008882528');
+insert into wise_enrollment values('12WH1A0530','Damerla Sai Naga Kameshwari Sri Lasya','CSE','9052876161','9390520060');
+insert into wise_enrollment values('12WH1A0531','Jala Vaishnavi','CSE','9395367234','9912378896');
+insert into wise_enrollment values('12WH1A0532','Veerapaneni Manvitha','CSE','9177136060','9492442188');
+insert into wise_enrollment values('12WH1A0533','Katta Devi Rachana','CSE','9441160179','9866241116');
+insert into wise_enrollment values('12WH1A0534','Joudula Sulohitha','CSE','8498925525','9550642516');
+insert into wise_enrollment values('12WH1A0535','Kalakota Meghana Reddy','CSE','8977546930','9492027957');
+insert into wise_enrollment values('12WH1A0536','Mantena Lalitha','CSE','9704175577','9959252243');
+insert into wise_enrollment values('12WH1A0537','Kasi Sushma','CSE','9666691836','9502758565');
+insert into wise_enrollment values('12WH1A0538','Khatravath Anusuja','CSE','8790347278','9949465846');
+insert into wise_enrollment values('12WH1A0539','Priyanka Varma.Ch','CSE','9603025858','9848911883');
+insert into wise_enrollment values('12WH1A0540','Koduru Spandana Devi','CSE','8143896061','9247691698');
+insert into wise_enrollment values('12WH1A0541','Manduva Harshitha','CSE','7382303043','9494242939');
+insert into wise_enrollment values('12WH1A0542','Tammana Sushmitha','CSE','7893927401','9397810023');
+insert into wise_enrollment values('12WH1A0543','Mylaram Chaithanya','CSE','','9347224489');
+insert into wise_enrollment values('12WH1A0544','Narala Mounika','CSE','9703973097','8184922865');
+insert into wise_enrollment values('12WH1A0545','Tetali Phani Viharika','CSE','9550813444','9989860710');
+insert into wise_enrollment values('12WH1A0546','Narkul Mounika Reddy','CSE','','9866178828');
+insert into wise_enrollment values('12WH1A0547','P.Shanthi','CSE','7207191358','8977656491');
+insert into wise_enrollment values('12WH1A0548','Vepa Sai Lakshmi Anusha','CSE','8374866276','9490164760');
+insert into wise_enrollment values('12WH1A0549','Padma Vasudevan','CSE','7893909615','9441493011');
+insert into wise_enrollment values('12WH1A0550','Pasumarthy Hima Bindhu','CSE','8885745949','8019101703');
+insert into wise_enrollment values('12WH1A0551','Vegesna mounica','CSE','9160592389','9014555369');
+insert into wise_enrollment values('12WH1A0552','Perumalla Swarupa','CSE','9502197177','9291366002');
+insert into wise_enrollment values('12WH1A0553','Pulagola Pavani','CSE','8008262235','9949205223');
+insert into wise_enrollment values('12WH1A0554','Vegesna Venkata Lakshmi Sruthi','CSE','9491635626','9000343344');
+insert into wise_enrollment values('12WH1A0555','Rudra Raju Sowmya','CSE','9652632947','9440124334');
+insert into wise_enrollment values('12WH1A0556','Sambangi Sridevi','CSE','9949642366','9603347566');
+insert into wise_enrollment values('12WH1A0557','Shatdarsanam Chandra Nikitha','CSE','8374932067','7702544787');
+insert into wise_enrollment values('12WH1A0558','Asati Subhangi','CSE','8977057727','9848037727');
+insert into wise_enrollment values('12WH1A0559','Valaboju Tejaswini','CSE','9032522256','9391055582');
+insert into wise_enrollment values('12WH1A0560','Yerranki Laxmi','CSE',' ','');
+insert into wise_enrollment values('12WH1A1201','B.Kavya','IT','8143105086','9397081266');
+insert into wise_enrollment values('12WH1A1202','Bachu Lavanya','IT','9705052521','9440797999');
+insert into wise_enrollment values('12WH1A1203','Balam Surya Nikhila','IT','7799856570','9848129149');
+insert into wise_enrollment values('12WH1A1204','B.Mounika','IT','9494844508','9494844508');
+insert into wise_enrollment values('12WH1A1205','B.Tejashwini Yadav','IT',' ','');
+insert into wise_enrollment values('12WH1A1206','Bhupathi Raju Anusha','IT','','9908430842');
+insert into wise_enrollment values('12WH1A1207','Gottumukkula Gayathri Greeshma','IT','9908466341','9030927778');
+insert into wise_enrollment values('12WH1A1208','Banda Jhansi Rani','IT','9246219018','9246219018');
+insert into wise_enrollment values('12WH1A1209','Bhupathi Raju Sruthi','IT','','9908430842');
+insert into wise_enrollment values('12WH1A1210','Gunturu Lakshmi Sirisha','IT','9491635622','9949727022');
+insert into wise_enrollment values('12WH1A1211','Chennana Spandana','IT','7702022093','9346255386');
+insert into wise_enrollment values('12WH1A1212','Kacham Soumya','IT','9966999204','9848110199');
+insert into wise_enrollment values('12WH1A1213','Donger Saketha Bhavana','IT','9030726278','9866249949');
+insert into wise_enrollment values('12WH1A1214','yenakathala sowmya','IT','8500206653','8500206653');
+insert into wise_enrollment values('12WH1A1215','katreddi Sai Tulasi','IT','9985222031','8008572748');
+insert into wise_enrollment values('12WH1A1216','Vemulamandha Sindhu','IT','9052678906','9948062499');
+insert into wise_enrollment values('12WH1A1217','Duddukuri Naga Venkata Kiranmai','IT',' ','');
+insert into wise_enrollment values('12WH1A1218','Koka Sai Meghana','IT','8897942173','9441054866');
+insert into wise_enrollment values('12WH1A1219','Ganta Pavani','IT','8801220044','9948081095');
+insert into wise_enrollment values('12WH1A1220','Gazerla Taruni','IT','8686748685','9440547394');
+insert into wise_enrollment values('12WH1A1221','Kolan Navya','IT','8106660766','9849180659');
+insert into wise_enrollment values('12WH1A1222','Goli Renuka','IT','8185026242','9959559561');
+insert into wise_enrollment values('12WH1A1223','Gottumukkala Sowjanya','IT','8500828133','9492361955');
+insert into wise_enrollment values('12WH1A1224','Kothuru Padmaja','IT','9866506202','9701301431');
+insert into wise_enrollment values('12WH1A1225','Vemula Sowndarya','IT','9573215232','9246501543');
+insert into wise_enrollment values('12WH1A1226','Kalluri Sai Sushmitha','IT','8341710250','8341859435');
+insert into wise_enrollment values('12WH1A1227','Kura Sri Varsha','IT','9505999972','9848212035');
+insert into wise_enrollment values('12WH1A1228','Kanumuri Gayathri Devi','IT','9490268819','9848999147');
+insert into wise_enrollment values('12WH1A1229','B.Karuna Sri','IT','7382487645','9640040076');
+insert into wise_enrollment values('12WH1A1230','Mallireddy Lendi Vihari','IT','9247870727','9247870727');
+insert into wise_enrollment values('12WH1A1231','Korthiwada Sandhya','IT','9866078961','9866023454');
+insert into wise_enrollment values('12WH1A1232','Kura Preethi','IT','9866547272','9246897272');
+insert into wise_enrollment values('12WH1A1233','Mashetty Akhila','IT','9701156622','9701156622');
+insert into wise_enrollment values('12WH1A1234','Kurra Sri Charvitha','IT','9652888825','9440608383');
+insert into wise_enrollment values('12WH1A1235','Gutti Lakshmi Neha','IT','9966379793','9642424257');
+insert into wise_enrollment values('12WH1A1236','Lokanadham Megha','IT','','9502856540');
+insert into wise_enrollment values('12WH1A1237','Manchiryala Navya Sri','IT','8179619099','9866696575');
+insert into wise_enrollment values('12WH1A1238','Md.Ayesha','IT','9985746786','9985746786');
+insert into wise_enrollment values('12WH1A1239','Pasam Sri Latha','IT','8096103881','8978925811');
+insert into wise_enrollment values('12WH1A1240','Nadimpalli Akhila','IT','9966309281','8121236281');
+insert into wise_enrollment values('12WH1A1241','Nangunuri Jyothi','IT','9666694544','9502828670');
+insert into wise_enrollment values('12WH1A1242','Puppala Bhandavi','IT','8985221626','8985221626');
+insert into wise_enrollment values('12WH1A1243','P.Anusha','IT','9885348968','9491330230');
+insert into wise_enrollment values('12WH1A1244','Pasari Vyshnavi','IT','8985871243','9492559993');
+insert into wise_enrollment values('12WH1A1245','RudraRaju Aishwarya','IT','9000808456','9550680908');
+insert into wise_enrollment values('12WH1A1246','Patlolla Sravya','IT','9440476950','9440476950');
+insert into wise_enrollment values('12WH1A1247','Pindi Manisha','IT','9492913197','9440157766');
+insert into wise_enrollment values('12WH1A1248','Sunkara Lakahmi Deepa','IT','9885227111','9885227111');
+insert into wise_enrollment values('12WH1A1249','Radharapu Rachana','IT','8712785639','9441719740');
+insert into wise_enrollment values('12WH1A1250','Sanikommu Swetha','IT','8985067846','9440594790');
+insert into wise_enrollment values('12WH1A1251','Tirumala Peddinti Lakshmi Mounika','IT','9505794695','9848857339');
+insert into wise_enrollment values('12WH1A1252','Shakarlavar Keerthi','IT','9553448062','9326081623');
+insert into wise_enrollment values('12WH1A1253','Nandala Usha Kiran','IT','9951424658','9440086466');
+insert into wise_enrollment values('12WH1A1254','Yalavarthi Sowjanya','IT','9030307290','9000898936');
+insert into wise_enrollment values('12WH1A1255','Kadmuri Vaidehi','IT','7382985823','9849317407');
+insert into wise_enrollment values('12WH1A1256','vemireddy soujanya','IT','9490321396','9440490440');
+insert into wise_enrollment values('12WH1A0401','Ankali Bharathi','ECE','8143102745','7893038294');
+insert into wise_enrollment values('12WH1A0402','Ankilla Vimala','ECE','9441847120','9441847120');
+insert into wise_enrollment values('12WH1A0403','Akshitha Reddy Kaukuttla','ECE','','9849991601');
+insert into wise_enrollment values('12WH1A0404','Aavula Sindhuja','ECE','8790603652','9848867779');
+insert into wise_enrollment values('12WH1A0405','Bitilla Sabitha','ECE',' ','');
+insert into wise_enrollment values('12WH1A0406','Jonnalagadda Yojitha','ECE','8184875080','9848329408');
+insert into wise_enrollment values('12WH1A0407','Boddu Sanjana','ECE','9494941753','9440612261');
+insert into wise_enrollment values('12WH1A0408','Balusu Khyathi','ECE','7702895277','9948623727');
+insert into wise_enrollment values('12WH1A0409','Kachireddy Uma Sowjanya','ECE','9490330227','9652455940');
+insert into wise_enrollment values('12WH1A0410','Chinnala Balambica','ECE','9849735217','9666635217');
+insert into wise_enrollment values('12WH1A0411','Gomas Harshitha','ECE','8897538129','8106289879');
+insert into wise_enrollment values('12WH1A0412','kolan Manisha','ECE','8096222285','9502227772');
+insert into wise_enrollment values('12WH1A0413','Gummalla Prasanthi','ECE','','9703637413');
+insert into wise_enrollment values('12WH1A0414','Harshita Dyagal','ECE','8106503704','9391118347');
+insert into wise_enrollment values('12WH1A0415','Koppula priyanka','ECE','8978824327','9912159757');
+insert into wise_enrollment values('12WH1A0416','Karika Amulya','ECE','9505801741','9441216832');
+insert into wise_enrollment values('12WH1A0417','Koganti Dedeepya Sri Valli','ECE','9908957052','9440623055');
+insert into wise_enrollment values('12WH1A0418','Kota Uha Chandrika','ECE','8019524819','9989886859');
+insert into wise_enrollment values('12WH1A0419','Kotipalli Krishna Priyanka','ECE','9032176337','9014197300');
+insert into wise_enrollment values('12WH1A0420','Kovvuru Kiranmai','ECE','8712131885','7842253568');
+insert into wise_enrollment values('12WH1A0421','Mekala Sai Swathi','ECE','8179933636','9393329674');
+insert into wise_enrollment values('12WH1A0422','Lingampally Vijaya Lakshmi','ECE','9346575088','8008742485');
+insert into wise_enrollment values('12WH1A0423','Mittakandala Jyothi','ECE','7396195290','9966885107');
+insert into wise_enrollment values('12WH1A0424','Namburi Alekhya','ECE','8885545369','9490925335');
+insert into wise_enrollment values('12WH1A0425','Medapati Divya Sravanthi','ECE','9963897808','9963897808');
+insert into wise_enrollment values('12WH1A0426','Mummadi Ravali','ECE','8374341090','9491145334');
+insert into wise_enrollment values('12WH1A0427','P Sri Vyshnavi','ECE',' ','');
+insert into wise_enrollment values('12WH1A0428','Nakkala Hannah Margarate','ECE','9849523685','7674900137');
+insert into wise_enrollment values('12WH1A0429','Nandikandi Jyoshna','ECE','7702501694','7702501694');
+insert into wise_enrollment values('12WH1A0430','Punuru Vinisha','ECE','9701848484','9705750667');
+insert into wise_enrollment values('12WH1A0431','Nasreen Begum','ECE','9704689686','9866055821');
+insert into wise_enrollment values('12WH1A0432','Pabba Mounika','ECE','9908604802','9396920094');
+insert into wise_enrollment values('12WH1A0433','Rajulapati Lavanya','ECE','9949038160','9949038160');
+insert into wise_enrollment values('12WH1A0434','Parvataneni Sravya','ECE','8978120222','9908574565');
+insert into wise_enrollment values('12WH1A0435','Patlolla Shirisha','ECE','','9949394070');
+insert into wise_enrollment values('12WH1A0436','Suraneni Gnana Lakshmi Namratha','ECE','9849933466','9849933466');
+insert into wise_enrollment values('12WH1A0437','Pinnaboina Lavanya','ECE','9177288712','9885349080');
+insert into wise_enrollment values('12WH1A0438','Pinnoju Ravalika','ECE','9550762897','9989579225');
+insert into wise_enrollment values('12WH1A0439','Chalasani Sai Charitha','ECE','9704229193','9966333331');
+insert into wise_enrollment values('12WH1A0440','Pratti Naga Sai Anusha','ECE','9912230117','9912230117');
+insert into wise_enrollment values('12WH1A0441','Prodduturi Rishitha Reddy','ECE','9959754656','9959754656');
+insert into wise_enrollment values('12WH1A0442','Shaik Aasima Masood','ECE','8297000791','8179074360');
+insert into wise_enrollment values('12WH1A0443','Putta Navya Sree','ECE','8790958499','9849371449');
+insert into wise_enrollment values('12WH1A0444','Pyapily Harika','ECE','9866308179','9866308179');
+insert into wise_enrollment values('12WH1A0445','Vegesna Asha Mounika','ECE','9949365215','9490808487');
+insert into wise_enrollment values('12WH1A0446','Ramanolla Priyanka Reddy','ECE','7842399380','9949207157');
+insert into wise_enrollment values('12WH1A0447','Rukmaiahgari Keerthana','ECE','9652286208','9963705642');
+insert into wise_enrollment values('12WH1A0448','Vuyyuru Swetha','ECE','9701962852','9701962852');
+insert into wise_enrollment values('12WH1A0449','Sangam Anusha','ECE','9490525090','9490525090');
+insert into wise_enrollment values('12WH1A0450','Shaik Samreen','ECE','8801888046','9949760860');
+insert into wise_enrollment values('12WH1A0451','Yarlagadda Anusha Chowdary','ECE','8978759971','9666227789');
+insert into wise_enrollment values('12WH1A0452','Nadakuditi Sri Sai Likitha','ECE','','9440466881');
+insert into wise_enrollment values('12WH1A0453','Sugu Reddy Hima Bindu Reddy','ECE','9000013237','9848555852');
+insert into wise_enrollment values('12WH1A0454','Yeluri Yeswanthi','ECE',' ','');
+insert into wise_enrollment values('12WH1A0455','Thogaru Leena Angel','ECE','7382085877','9393006061');
+insert into wise_enrollment values('12WH1A0456','Tummala Satvika','ECE','9989774005','9989774005');
+insert into wise_enrollment values('12WH1A0457','Vadlamudi Jahnavi','ECE','9550107388','9959970207');
+insert into wise_enrollment values('12WH1A0458','Vasamsetty Mounika','ECE','9441179995','9866493113');
+insert into wise_enrollment values('12WH1A0459','Veeraballi Nikitha','ECE','8520996123','9440596438');
+insert into wise_enrollment values('12WH1A0460','Yeruva Yamini Siri Chanadana','ECE','9989274843','9989274843');
+insert into wise_enrollment values('12WH1A0201','Abdul Razak Nusrath','EEE','9948378655','9848185248');
+insert into wise_enrollment values('12WH1A0202','Achanta Laxmi Sai Sita Bhargavi','EEE','9849808825','8008200351');
+insert into wise_enrollment values('12WH1A0203','Ardha Anusha','EEE','8330987529','9441369112');
+insert into wise_enrollment values('12WH1A0204','Adavelli Jyothi','EEE','8500821092','8985423364');
+insert into wise_enrollment values('12WH1A0205','Anumalla Swetha','EEE','9949943383','9963458123');
+insert into wise_enrollment values('12WH1A0206','Bittingu Himavarsha','EEE','8019812110','9985134263');
+insert into wise_enrollment values('12WH1A0207','Bommadevara Preetica','EEE','9618084153','9885777575');
+insert into wise_enrollment values('12WH1A0208','Bandari Suma Priya','EEE','8297321730','8121803835');
+insert into wise_enrollment values('12WH1A0209','Chidipothu Venkata Tejaswini','EEE','8186857757','9848342715');
+insert into wise_enrollment values('12WH1A0210','Bandla Kavya','EEE',' ','');
+insert into wise_enrollment values('12WH1A0211','Veerannagari Meghana','EEE','8187873897','9949939499');
+insert into wise_enrollment values('12WH1A0212','Donthi Saroja','EEE','7893113465','8008103832');
+insert into wise_enrollment values('12WH1A0213','Belkeri Shivani','EEE','8985952706','9652421901');
+insert into wise_enrollment values('12WH1A0214','Betgeri Sai Nethra','EEE','9000995877','9866267746');
+insert into wise_enrollment values('12WH1A0215','Edarapalli Sushmitha','EEE','8688736972','9542450455');
+insert into wise_enrollment values('12WH1A0216','Bhaswapathri Priyanka','EEE','9177971689','9441728989');
+insert into wise_enrollment values('12WH1A0217','Ellandula Gowthami','EEE','9160722441','9052753336');
+insert into wise_enrollment values('12WH1A0218','Gaja Kiranmai','EEE','9652679330','9440896488');
+insert into wise_enrollment values('12WH1A0219','Gogineni Lakshmi mounica','EEE','9866334331','9951990589');
+insert into wise_enrollment values('12WH1A0220','Jaligama Geetha','EEE','7893190600','9949347988');
+insert into wise_enrollment values('12WH1A0221','Illuri Alekhya','EEE','8019536613','9985203802');
+insert into wise_enrollment values('12WH1A0222','Jannu Nikitha','EEE','9000192581','9440875935');
+insert into wise_enrollment values('12WH1A0223','Jittaboena Rashmi Poojitha','EEE','8008787608','9394829569');
+insert into wise_enrollment values('12WH1A0224','Karimireddy Thejavathi','EEE','9676316164','9700930088');
+insert into wise_enrollment values('12WH1A0225','Kanakam Navya','EEE','9948808072','8978766778');
+insert into wise_enrollment values('12WH1A0226','Kasi Reddy Priyanka','EEE','9396826170','9030337723');
+insert into wise_enrollment values('12WH1A0227','Kesani Vinutna','EEE','8686080214','9949001999');
+insert into wise_enrollment values('12WH1A0228','Vedigepally Somavathi','EEE',' ','');
+insert into wise_enrollment values('12WH1A0229','Kola Manoghna','EEE','9440974902','9440876135');
+insert into wise_enrollment values('12WH1A0230','Kominisetty Pravalika','EEE','8977208887','9989182452');
+insert into wise_enrollment values('12WH1A0231','Korandla Ravali','EEE','9701091912','9440491267');
+insert into wise_enrollment values('12WH1A0232','Lanke Bhavana','EEE','9848428616','9848428616');
+insert into wise_enrollment values('12WH1A0233','Marneni Sravani','EEE','9440451152','9440451152');
+insert into wise_enrollment values('12WH1A0234','Manchala Bhavani','EEE','9032811003','9912183184');
+insert into wise_enrollment values('12WH1A0235','Morapally Sadhvi Reddy','EEE','9703522808','9246996163');
+insert into wise_enrollment values('12WH1A0236','Ponugupati Sai Lalitha','EEE','7893643777','9704500658');
+insert into wise_enrollment values('12WH1A0237','Kappala Mounika','EEE','9441609647','9441609647');
+insert into wise_enrollment values('12WH1A0238','Mylavaram Swathi','EEE','9248183936','9248183936');
+insert into wise_enrollment values('12WH1A0239','Ruddarraju Haripriya','EEE','9490367526','9490367526');
+insert into wise_enrollment values('12WH1A0240','Neelakantam Bhattu Anupama','EEE','9848784586','9848784586');
+insert into wise_enrollment values('12WH1A0241','O Mamatha','EEE',' ','');
+insert into wise_enrollment values('12WH1A0242','M.Soukhya','EEE',' ','');
+insert into wise_enrollment values('12WH1A0243','Ogiboina Tanuja','EEE','8121568157','9849071130');
+insert into wise_enrollment values('12WH1A0244','Parupalli Sowjanya','EEE','9848273843','9848273843');
+insert into wise_enrollment values('12WH1A0245','yerpula Gowthami','EEE','9392021657','9392021657');
+insert into wise_enrollment values('12WH1A0246','Ragam Mounika Yadav','EEE','9908016596','9908016596');
+insert into wise_enrollment values('12WH1A0247','Ramavath Lakshmi','EEE','8897967449','9160300703');
+insert into wise_enrollment values('12WH1A0248','Yeruva Chandralekha','EEE','9966442009','9052055144');
+insert into wise_enrollment values('12WH1A0249','Sagarlla Swapna priya','EEE','9985826087','9440836134');
+insert into wise_enrollment values('12WH1A0250','Potnuru Sanjana','EEE','7416135180','9000208963');
+insert into wise_enrollment values('12WH1A0251','V. Mounika Reddy','EEE','9666224340','9666555998');
+insert into wise_enrollment values('12WH1A0252','Sidda Ravali','EEE','','9492827922');
+insert into wise_enrollment values('12WH1A0253','Valasala Bhagya sree','EEE','','7386871758');
+insert into wise_enrollment values('12WH1A0254','Surreddygari Manasa','EEE','','9949706052');
+insert into wise_enrollment values('12WH1A0255','Thonti Sindhuja','EEE','9346317022','9346317022');
+insert into wise_enrollment values('12WH1A0256','Thota Pranitha','EEE','8143660931','9866443836');
+
+
+
+select * from student_details;
+
++------------+---------------------------------------+--------+------------+-------------+
+| rollno     | name                                  | branch | phno       | parent_phno |
++------------+---------------------------------------+--------+------------+-------------+
+| 12WH1A0501 | Allada Lakshmi Sowjanya               | CSE    | 9959699108 | 9959699108  |
+| 12WH1A0502 | Ande Vineela                          | CSE    | 8801736495 | 9701186863  |
+| 12WH1A0503 | Alluri Neelima Devi                   | CSE    | 8142098181 | 8886229158  |
+| 12WH1A0504 | Anumandla Kruthi Meghana              | CSE    | 9542735982 | 9393831091  |
+| 12WH1A0505 | Baruvani Mounika                      | CSE    | 9866492597 | 8885500112  |
+| 12WH1A0506 | Balusu Bhuvana                        | CSE    | 8008035555 | 9000395555  |
+| 12WH1A0507 | Bollineni Tejaswi                     | CSE    | 9959976045 | 9959976045  |
+| 12WH1A0508 | Burgula Purna Bhanu Sriyana           | CSE    | 8897743241 | 9642397097  |
+| 12WH1A0509 | Challa Bindu                          | CSE    | 9866308999 | 8897790406  |
+| 12WH1A0510 | Chadalavada Sirisha                   | CSE    | 7893873689 | 7893873689  |
+| 12WH1A0511 | Chityala Manasa                       | CSE    | 8008520059 | 9492002804  |
+| 12WH1A0512 | Chilakala Sowmya                      | CSE    | 9494235642 | 9440392909  |
+| 12WH1A0513 | Chukkannagari Shreya Reddy            | CSE    | 8977716313 | 9059591596  |
+| 12WH1A0514 | Kammakomati Damini Satya              | CSE    | 9666484158 | 9491049306  |
+| 12WH1A0515 | Dandu Geetha Manasa                   | CSE    |            | 8121789992  |
+| 12WH1A0516 | Desharaju Akhila                      | CSE    |            | 9989831939  |
+| 12WH1A0517 | Dhande Sushma                         | CSE    | 9676861286 | 9676861286  |
+| 12WH1A0519 | Shaik Fathima Bhanu                   | CSE    |            | 9951539087  |
+| 12WH1A0520 | Gadigae Vineesha                      | CSE    |            | 9160896887  |
+| 12WH1A0521 | Ganduri Chandana                      | CSE    | 7702444452 | 9849178350  |
+| 12WH1A0522 | Gadipalli Sowmya                      | CSE    | 7416556638 | 9502320329  |
+| 12WH1A0523 | Gimka Ashalatha                       | CSE    | 8143468229 | 9492428570  |
+| 12WH1A0524 | Ganti Soumya Ravali                   | CSE    | 9963453043 | 7702060593  |
+| 12WH1A0525 | Golkonda Hyndavi                      | CSE    | 8121963619 | 9490868519  |
+| 12WH1A0526 | Gunanya Siri                          | CSE    | 8790562727 | 9177190001  |
+| 12WH1A0527 | Kalidindi Subha Sri                   | CSE    | 8341244444 | 9866644666  |
+| 12WH1A0528 | Gunnareddy Manasa                     | CSE    | 9059628611 | 8142506993  |
+| 12WH1A0529 | Jakkaraju Mrudhula                    | CSE    | 9642446951 | 8008882528  |
+| 12WH1A0530 | Damerla Sai Naga Kameshwari Sri Lasya | CSE    | 9052876161 | 9390520060  |
+| 12WH1A0531 | Jala Vaishnavi                        | CSE    | 9395367234 | 9912378896  |
+| 12WH1A0532 | Veerapaneni Manvitha                  | CSE    | 9177136060 | 9492442188  |
+| 12WH1A0533 | Katta Devi Rachana                    | CSE    | 9441160179 | 9866241116  |
+| 12WH1A0534 | Joudula Sulohitha                     | CSE    | 8498925525 | 9550642516  |
+| 12WH1A0535 | Kalakota Meghana Reddy                | CSE    | 8977546930 | 9492027957  |
+| 12WH1A0536 | Mantena Lalitha                       | CSE    | 9704175577 | 9959252243  |
+| 12WH1A0537 | Kasi Sushma                           | CSE    | 9666691836 | 9502758565  |
+| 12WH1A0538 | Khatravath Anusuja                    | CSE    | 8790347278 | 9949465846  |
+| 12WH1A0539 | PRIYANKA VARMA.Ch                     | CSE    | 9603025858 | 9848911883  |
+| 12WH1A0540 | Koduru Spandana Devi                  | CSE    | 8143896061 | 9247691698  |
+| 12WH1A0541 | Manduva Harshitha                     | CSE    | 7382303043 | 9494242939  |
+| 12WH1A0542 | Tammana Sushmitha                     | CSE    | 7893927401 | 9397810023  |
+| 12WH1A0543 | Mylaram Chaithanya                    | CSE    |            | 9347224489  |
+| 12WH1A0544 | Narala Mounika                        | CSE    | 9703973097 | 8184922865  |
+| 12WH1A0545 | Tetali Phani Viharika                 | CSE    | 9550813444 | 9989860710  |
+| 12WH1A0546 | Narkul Mounika Reddy                  | CSE    |            | 9866178828  |
+| 12WH1A0547 | P.Shanthi                             | CSE    | 7207191358 | 8977656491  |
+| 12WH1A0548 | Vepa Sai Lakshmi Anusha               | CSE    | 8374866276 | 9490164760  |
+| 12WH1A0549 | Padma Vasudevan                       | CSE    | 7893909615 | 9441493011  |
+| 12WH1A0550 | Pasumarthy Hima Bindhu                | CSE    | 8885745949 | 8019101703  |
+| 12WH1A0551 | Vegesna mounica                       | CSE    | 9160592389 | 9014555369  |
+| 12WH1A0552 | Perumalla Swarupa                     | CSE    | 9502197177 | 9291366002  |
+| 12WH1A0553 | Pulagola Pavani                       | CSE    | 8008262235 | 9949205223  |
+| 12WH1A0554 | Vegesna Venkata Lakshmi Sruthi        | CSE    | 9491635626 | 9000343344  |
+| 12WH1A0555 | Rudra Raju Sowmya                     | CSE    | 9652632947 | 9440124334  |
+| 12WH1A0556 | Sambangi Sridevi                      | CSE    | 9949642366 | 9603347566  |
+| 12WH1A0557 | Shatdarsanam Chandra Nikitha          | CSE    | 8374932067 | 7702544787  |
+| 12WH1A0558 | Asati Subhangi                        | CSE    | 8977057727 | 9848037727  |
+| 12WH1A0559 | Valaboju Tejaswini                    | CSE    | 9032522256 | 9391055582  |
+| 12WH1A0201 | Abdul Razak Nusrath                   | EEE    | 9948378655 | 9848185248  |
+| 12WH1A0202 | Achanta Laxmi Sai Sita Bhargavi       | EEE    | 9849808825 | 8008200351  |
+| 12WH1A0203 | Ardha Anusha                          | EEE    | 8330987529 | 9441369112  |
+| 12WH1A0204 | Adavelli Jyothi                       | EEE    | 8500821092 | 8985423364  |
+| 12WH1A0205 | Anumalla Swetha                       | EEE    | 9949943383 | 9963458123  |
+| 12WH1A0206 | Bittingu Himavarsha                   | EEE    | 8019812110 | 9985134263  |
+| 12WH1A0207 | Bommadevara Preetica                  | EEE    | 9618084153 | 9885777575  |
+| 12WH1A0208 | Bandari Suma Priya                    | EEE    | 8297321730 | 8121803835  |
+| 12WH1A0209 | Chidipothu Venkata Tejaswini          | EEE    | 8186857757 | 9848342715  |
+| 12WH1A0211 | V.Meghana                             | EEE    | 8187873897 | 9949939499  |
+| 12WH1A0212 | Donthi Saroja                         | EEE    | 7893113465 | 8008103832  |
+| 12WH1A0213 | Belkeri Shivani                       | EEE    | 8985952706 | 9652421901  |
+| 12WH1A0214 | Betgeri Sai Nethra                    | EEE    | 9000995877 | 9866267746  |
+| 12WH1A0215 | Edarapalli Sushmitha                  | EEE    | 8688736972 | 9542450455  |
+| 12WH1A0216 | Bhaswapathri Priyanka                 | EEE    | 9177971689 | 9441728989  |
+| 12WH1A0217 | Ellandula Gowthami                    | EEE    | 9160722441 | 9052753336  |
+| 12WH1A0218 | Gaja Kiranmai                         | EEE    | 9652679330 | 9440896488  |
+| 12WH1A0219 | Gogineni Lakshmi mounica              | EEE    | 9866334331 | 9951990589  |
+| 12WH1A0220 | Jaligama Geetha                       | EEE    | 7893190600 | 9949347988  |
+| 12WH1A0221 | Illuri Alekhya                        | EEE    | 8019536613 | 9985203802  |
+| 12WH1A0222 | Jannu Nikitha                         | EEE    | 9000192581 | 9440875935  |
+| 12WH1A0223 | Jittaboena Rashmi Poojitha            | EEE    | 8008787608 | 9394829569  |
+| 12WH1A0224 | Karimireddy Thejavathi                | EEE    | 9676316164 | 9700930088  |
+| 12WH1A0225 | Kanakam Navya                         | EEE    | 9948808072 | 8978766778  |
+| 12WH1A0226 | Kasi Reddy Priyanka                   | EEE    | 9396826170 | 9030337723  |
+| 12WH1A0227 | Kesani Vinutna                        | EEE    | 8686080214 | 9949001999  |
+| 12WH1A0229 | Kola Manoghna                         | EEE    | 9440974902 | 9440876135  |
+| 12WH1A0230 | K.Pravalika                           | EEE    | 8977208887 | 9989182452  |
+| 12WH1A0231 | Korandla Ravali                       | EEE    | 9701091912 | 9440491267  |
+| 12WH1A0232 | Lanke Bhavana                         | EEE    | 9848428616 | 9848428616  |
+| 12WH1A0233 | Marneni Sravani                       | EEE    | 9440451152 | 9440451152  |
+| 12WH1A0234 | Manchala Bhavani                      | EEE    | 9032811003 | 9912183184  |
+| 12WH1A0235 | Morapally Sadhvi Reddy                | EEE    | 9703522808 | 9246996163  |
+| 12WH1A0236 | Ponugupati Sai Lalitha                | EEE    | 7893643777 | 9704500658  |
+| 12WH1A0237 | Kappala Mounika                       | EEE    | 9441609647 | 9441609647  |
+| 12WH1A0238 | Mylavaram Swathi                      | EEE    | 9248183936 | 9248183936  |
+| 12WH1A0239 | Ruddarraju Haripriya                  | EEE    | 9490367526 | 9490367526  |
+| 12WH1A0240 | Neelakantam Bhattu Anupama            | EEE    | 9848784586 | 9848784586  |
+| 12WH1A0243 | Ogiboina Tanuja                       | EEE    | 8121568157 | 9849071130  |
+| 12WH1A0244 | Parupalli Sowjanya                    | EEE    | 9848273843 | 9848273843  |
+| 12WH1A0245 | yerpula Gowthami                      | EEE    | 9392021657 | 9392021657  |
+| 12WH1A0246 | Ragam Mounika Yadav                   | EEE    | 9908016596 | 9908016596  |
+| 12WH1A0247 | Ramavath Lakshmi                      | EEE    | 8897967449 | 9160300703  |
+| 12WH1A0248 | Yeruva Chandralekha                   | EEE    | 9966442009 | 9052055144  |
+| 12WH1A0249 | Sagarlla Swapna priya                 | EEE    | 9985826087 | 9440836134  |
+| 12WH1A0250 | Potnuru Sanjana                       | EEE    | 7416135180 | 9000208963  |
+| 12WH1A0251 | V. Mounika Reddy                      | EEE    | 9666224340 | 9666555998  |
+| 12WH1A0252 | Sidda Ravali                          | EEE    |            | 9492827922  |
+| 12WH1A0253 | V. Bhagya sree                        | EEE    |            | 7386871758  |
+| 12WH1A0254 | Surreddygari Manasa                   | EEE    |            | 9949706052  |
+| 12WH1A0255 | Thonti Sindhuja                       | EEE    | 9346317022 | 9346317022  |
+| 12WH1A0256 | Thota Pranitha                        | EEE    | 8143660931 | 9866443836  |
+| 12WH1A0401 | Ankali Bharathi                       | ECE    | 8143102745 | 7893038294  |
+| 12WH1A0402 | Ankilla Vimala                        | ECE    | 9441847120 | 9441847120  |
+| 12WH1A0403 | Akshitha Reddy Kaukuttla              | ECE    |            | 9849991601  |
+| 12WH1A0404 | Aavula Sindhuja                       | ECE    | 8790603652 | 9848867779  |
+| 12WH1A0406 | Jonnalagadda Yojitha                  | ECE    | 8184875080 | 9848329408  |
+| 12WH1A0407 | Boddu Sanjana                         | ECE    | 9494941753 | 9440612261  |
+| 12WH1A0408 | B.Khyathi                             | ECE    | 7702895277 | 9948623727  |
+| 12WH1A0409 | Kachireddy Uma Sowjanya               | ECE    | 9490330227 | 9652455940  |
+| 12WH1A0410 | Chinnala Balambica                    | ECE    | 9849735217 | 9666635217  |
+| 12WH1A0411 | Gomas Harshitha                       | ECE    | 8897538129 | 8106289879  |
+| 12WH1A0412 | kolan Manisha                         | ECE    | 8096222285 | 9502227772  |
+| 12WH1A0413 | Gummalla Prasanthi                    | ECE    |            | 9703637413  |
+| 12WH1A0414 | Harshita Dyagal                       | ECE    | 8106503704 | 9391118347  |
+| 12WH1A0415 | Koppula priyanka                      | ECE    | 8978824327 | 9912159757  |
+| 12WH1A0416 | Karika Amulya                         | ECE    | 9505801741 | 9441216832  |
+| 12WH1A0417 | Koganti Dedeepya Sri Valli            | ECE    | 9908957052 | 9440623055  |
+| 12WH1A0418 | Kota Uha Chandrika                    | ECE    | 8019524819 | 9989886859  |
+| 12WH1A0419 | Kotipalli Krishna Priyanka            | ECE    | 9032176337 | 9014197300  |
+| 12WH1A0420 | Kovvuru Kiranmai                      | ECE    | 8712131885 | 7842253568  |
+| 12WH1A0421 | Mekala Sai Swathi                     | ECE    | 8179933636 | 9393329674  |
+| 12WH1A0422 | Lingampally Vijaya Lakshmi            | ECE    | 9346575088 | 8008742485  |
+| 12WH1A0423 | Mittakandala Jyothi                   | ECE    | 7396195290 | 9966885107  |
+| 12WH1A0424 | Namburi Alekhya                       | ECE    | 8885545369 | 9490925335  |
+| 12WH1A0425 | Medapati Divya Sravanthi              | ECE    | 9963897808 | 9963897808  |
+| 12WH1A0426 | Mummadi Ravali                        | ECE    | 8374341090 | 9491145334  |
+| 12WH1A0428 | Nakkala Hannah Margarate              | ECE    | 9849523685 | 7674900137  |
+| 12WH1A0429 | Nandikandi Jyoshna                    | ECE    | 7702501694 | 7702501694  |
+| 12WH1A0430 | Punuru Vinisha                        | ECE    | 9701848484 | 9705750667  |
+| 12WH1A0431 | Nasreen Begum                         | ECE    | 9704689686 | 9866055821  |
+| 12WH1A0432 | Pabba Mounika                         | ECE    | 9908604802 | 9396920094  |
+| 12WH1A0433 | Rajulapati Lavanya                    | ECE    | 9949038160 | 9949038160  |
+| 12WH1A0434 | Parvataneni Sravya                    | ECE    | 8978120222 | 9908574565  |
+| 12WH1A0435 | Patlolla Shirisha                     | ECE    |            | 9949394070  |
+| 12WH1A0436 | Suraneni Gnana Lakshmi Namratha       | ECE    | 9849933466 | 9849933466  |
+| 12WH1A0437 | Pinnaboina Lavanya                    | ECE    | 9177288712 | 9885349080  |
+| 12WH1A0438 | Pinnoju Ravalika                      | ECE    | 9550762897 | 9989579225  |
+| 12WH1A0439 | Chalasani Sai Charitha                | ECE    | 9704229193 | 9966333331  |
+| 12WH1A0440 | Pratti Naga Sai Anusha                | ECE    | 9912230117 | 9912230117  |
+| 12WH1A0441 | Prodduturi Rishitha Reddy             | ECE    | 9959754656 | 9959754656  |
+| 12WH1A0442 | Shaik Aasima Masood                   | ECE    | 8297000791 | 8179074360  |
+| 12WH1A0443 | Putta Navya Sree                      | ECE    | 8790958499 | 9849371449  |
+| 12WH1A0444 | Pyapily Harika                        | ECE    | 9866308179 | 9866308179  |
+| 12WH1A0445 | Vegesna Asha Mounika                  | ECE    | 9949365215 | 9490808487  |
+| 12WH1A0446 | Ramanolla Priyanka Reddy              | ECE    | 7842399380 | 9949207157  |
+| 12WH1A0447 | Rukmaiahgari Keerthana                | ECE    | 9652286208 | 9963705642  |
+| 12WH1A0448 | Vuyyuru Swetha                        | ECE    | 9701962852 | 9701962852  |
+| 12WH1A0449 | Sangam Anusha                         | ECE    | 9490525090 | 9490525090  |
+| 12WH1A0450 | Shaik Samreen                         | ECE    | 8801888046 | 9949760860  |
+| 12WH1A0451 | Yarlagadda Anusha Chowdary            | ECE    | 8978759971 | 9666227789  |
+| 12WH1A0452 | Nadakuditi Sri Sai Likitha            | ECE    |            | 9440466881  |
+| 12WH1A0453 | Sugu Reddy Hima Bindu Reddy           | ECE    | 9000013237 | 9848555852  |
+| 12WH1A0455 | Thogaru Leena Angel                   | ECE    | 7382085877 | 9393006061  |
+| 12WH1A0456 | Tummala Satvika                       | ECE    | 9989774005 | 9989774005  |
+| 12WH1A0457 | Vadlamudi Jahnavi                     | ECE    | 9550107388 | 9959970207  |
+| 12WH1A0458 | Vasamsetty Mounika                    | ECE    | 9441179995 | 9866493113  |
+| 12WH1A0459 | Veeraballi Nikitha                    | ECE    | 8520996123 | 9440596438  |
+| 12WH1A0460 | Yeruva Yamini Siri Chanadana          | ECE    | 9989274843 | 9989274843  |
+| 12WH1A1201 | B.Kavya                               | IT     | 8143105086 | 9397081266  |
+| 12WH1A1202 | Bachu Lavanya                         | IT     | 9705052521 | 9440797999  |
+| 12WH1A1203 | Balam Surya Nikhila                   | IT     | 7799856570 | 9848129149  |
+| 12WH1A1204 | B.Mounika                             | IT     | 9494844508 | 9494844508  |
+| 12WH1A1206 | Bhupathi Raju Anusha                  | IT     |            | 9908430842  |
+| 12WH1A1207 | Gottumukkula Gayathri Greeshma        | IT     | 9908466341 | 9030927778  |
+| 12WH1A1208 | Banda Jhansi Rani                     | IT     | 9246219018 | 9246219018  |
+| 12WH1A1209 | Bhupathi Raju Sruthi                  | IT     |            | 9908430842  |
+| 12WH1A1210 | Gunturu Lakshmi Sirisha               | IT     | 9491635622 | 9949727022  |
+| 12WH1A1211 | Chennana Spandana                     | IT     | 7702022093 | 9346255386  |
+| 12WH1A1212 | Kacham Soumya                         | IT     | 9966999204 | 9848110199  |
+| 12WH1A1213 | Donger Saketha Bhavana                | IT     | 9030726278 | 9866249949  |
+| 12WH1A1214 | yenakathala sowmya                    | IT     | 8500206653 | 8500206653  |
+| 12WH1A1215 | katreddi Sai Tulasi                   | IT     | 9985222031 | 8008572748  |
+| 12WH1A1216 | vemulamandha sindhu                   | IT     | 9052678906 | 9948062499  |
+| 12WH1A1218 | Koka Sai Meghana                      | IT     | 8897942173 | 9441054866  |
+| 12WH1A1219 | Ganta Pavani                          | IT     | 8801220044 | 9948081095  |
+| 12WH1A1220 | Gazerla Taruni                        | IT     | 8686748685 | 9440547394  |
+| 12WH1A1221 | Kolan Navya                           | IT     | 8106660766 | 9849180659  |
+| 12WH1A1222 | Goli Renuka                           | IT     | 8185026242 | 9959559561  |
+| 12WH1A1223 | Gottumukkala Sowjanya                 | IT     | 8500828133 | 9492361955  |
+| 12WH1A1224 | Kothuru Padmaja                       | IT     | 9866506202 | 9701301431  |
+| 12WH1A1225 | V. Sowndarya                          | IT     | 9573215232 | 9246501543  |
+| 12WH1A1226 | Kalluri Sai Sushmitha                 | IT     | 8341710250 | 8341859435  |
+| 12WH1A1227 | Kura Sri Varsha                       | IT     | 9505999972 | 9848212035  |
+| 12WH1A1228 | Kanumuri Gayathri Devi                | IT     | 9490268819 | 9848999147  |
+| 12WH1A1229 | B.Karuna Sri                          | IT     | 7382487645 | 9640040076  |
+| 12WH1A1230 | Mallireddy Lendi Vihari               | IT     | 9247870727 | 9247870727  |
+| 12WH1A1231 | Korthiwada Sandhya                    | IT     | 9866078961 | 9866023454  |
+| 12WH1A1232 | Kura Preethi                          | IT     | 9866547272 | 9246897272  |
+| 12WH1A1233 | Mashetty Akhila                       | IT     | 9701156622 | 9701156622  |
+| 12WH1A1234 | Kurra Sri Charvitha                   | IT     | 9652888825 | 9440608383  |
+| 12WH1A1235 | Gutti Lakshmi Neha                    | IT     | 9966379793 | 9642424257  |
+| 12WH1A1236 | Lokanadham Megha                      | IT     |            | 9502856540  |
+| 12WH1A1237 | Manchiryala Navya Sri                 | IT     | 8179619099 | 9866696575  |
+| 12WH1A1238 | Md.Ayesha                             | IT     | 9985746786 | 9985746786  |
+| 12WH1A1239 | Pasam Sri Latha                       | IT     | 8096103881 | 8978925811  |
+| 12WH1A1240 | Nadimpalli Akhila                     | IT     | 9966309281 | 8121236281  |
+| 12WH1A1241 | Nangunuri Jyothi                      | IT     | 9666694544 | 9502828670  |
+| 12WH1A1242 | Puppala Bhandavi                      | IT     | 8985221626 | 8985221626  |
+| 12WH1A1243 | P.Anusha                              | IT     | 9885348968 | 9491330230  |
+| 12WH1A1244 | Pasari Vyshnavi                       | IT     | 8985871243 | 9492559993  |
+| 12WH1A1245 | RudraRaju Aishwarya                   | IT     | 9000808456 | 9550680908  |
+| 12WH1A1246 | Patlolla Sravya                       | IT     | 9440476950 | 9440476950  |
+| 12WH1A1247 | Pindi Manisha                         | IT     | 9492913197 | 9440157766  |
+| 12WH1A1248 | Sunkara Lakahmi Deepa                 | IT     | 9885227111 | 9885227111  |
+| 12WH1A1249 | Radharapu Rachana                     | IT     | 8712785639 | 9441719740  |
+| 12WH1A1250 | Sanikommu Swetha                      | IT     | 8985067846 | 9440594790  |
+| 12WH1A1251 | Tirumala Peddinti Lakshmi Mounika     | IT     | 9505794695 | 9848857339  |
+| 12WH1A1252 | Shakarlavar Keerthi                   | IT     | 9553448062 | 9326081623  |
+| 12WH1A1253 | Nandala Usha Kiran                    | IT     | 9951424658 | 9440086466  |
+| 12WH1A1254 | Yalavarthi Sowjanya                   | IT     | 9030307290 | 9000898936  |
+| 12WH1A1255 | Kadmuri Vaidehi                       | IT     | 7382985823 | 9849317407  |
+| 12WH1A1256 | vemireddy soujanya                    | IT     | 9490321396 | 9440490440  |
++------------+---------------------------------------+--------+------------+-------------+
+
+
+
+
+create table wise_enrollment(rollno char(10), mod_code char(5), status char(10), marks int(11));
+
+desc wise_enrollment;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| rollno   | char(10) | YES  |     | NULL    |       |
+| mod_code | char(5)  | YES  |     | NULL    |       |
+| status   | char(10) | YES  |     | NULL    |       |
+| marks    | int(11)  | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+
+insert into wise_enrollment values('12WH1A0501','JSI','PASSED','29');
+insert into wise_enrollment values('12WH1A0502','JSI','PASSED','7.99');
+insert into wise_enrollment values('12WH1A0503','JSI','PASSED','10');
+insert into wise_enrollment values('12WH1A0504','JSI','PASSED','10.99');
+insert into wise_enrollment values('12WH1A0505','JSI','PASSED','2.49');
+insert into wise_enrollment values('12WH1A0506','JSI','PASSED','7.99');
+insert into wise_enrollment values('12WH1A0507','JSI','PASSED','13.5');
+insert into wise_enrollment values('12WH1A0508','JSI','PASSED','15');
+insert into wise_enrollment values('12WH1A0509','JSI','PASSED','18.5');
+insert into wise_enrollment values('12WH1A0510','JSI','PASSED','8');
+insert into wise_enrollment values('12WH1A0511','JSI','PASSED','8.5');
+insert into wise_enrollment values('12WH1A0512','JSI','PASSED','11.5');
+insert into wise_enrollment values('12WH1A0513','JSI','PASSED','14');
+insert into wise_enrollment values('12WH1A0514','JSI','PASSED','32');
+insert into wise_enrollment values('12WH1A0515','JSI','PASSED','9');
+insert into wise_enrollment values('12WH1A0516','JSI','PASSED','12');
+insert into wise_enrollment values('12WH1A0517','JSI','PASSED','15.5');
+insert into wise_enrollment values('12WH1A0518','JSI','PASSED','-0.02');
+insert into wise_enrollment values('12WH1A0519','JSI','PASSED','10');
+insert into wise_enrollment values('12WH1A0520','JSI','PASSED','13.5');
+insert into wise_enrollment values('12WH1A0521','JSI','PASSED','12');
+insert into wise_enrollment values('12WH1A0522','JSI','PASSED','10.5');
+insert into wise_enrollment values('12WH1A0523','JSI','PASSED','0.49');
+insert into wise_enrollment values('12WH1A0524','JSI','PASSED','18.5');
+insert into wise_enrollment values('12WH1A0525','JSI','PASSED','11.5');
+insert into wise_enrollment values('12WH1A0526','JSI','PASSED','20');
+insert into wise_enrollment values('12WH1A0527','JSI','PASSED','17.5');
+insert into wise_enrollment values('12WH1A0528','JSI','PASSED','3.99');
+insert into wise_enrollment values('12WH1A0529','JSI','PASSED','15.5');
+insert into wise_enrollment values('12WH1A0530','JSI','PASSED','24.5');
+insert into wise_enrollment values('12WH1A0531','JSI','PASSED','8.5');
+insert into wise_enrollment values('12WH1A0532','JSI','PASSED','15.5');
+insert into wise_enrollment values('12WH1A0533','JSI','PASSED','19');
+insert into wise_enrollment values('12WH1A0534','JSI','PASSED','19.5');
+insert into wise_enrollment values('12WH1A0535','JSI','PASSED','10');
+insert into wise_enrollment values('12WH1A0536','JSI','PASSED','1.99');
+insert into wise_enrollment values('12WH1A0537','JSI','PASSED','11');
+insert into wise_enrollment values('12WH1A0538','JSI','PASSED','1.49');
+insert into wise_enrollment values('12WH1A0539','JSI','PASSED','9');
+insert into wise_enrollment values('12WH1A0540','JSI','PASSED','12.5');
+insert into wise_enrollment values('12WH1A0541','JSI','PASSED','26');
+insert into wise_enrollment values('12WH1A0542','JSI','PASSED','-0.02');
+insert into wise_enrollment values('12WH1A0543','JSI','PASSED','12');
+insert into wise_enrollment values('12WH1A0544','JSI','PASSED','12.5');
+insert into wise_enrollment values('12WH1A0545','JSI','PASSED','5.99');
+insert into wise_enrollment values('12WH1A0546','JSI','PASSED','13');
+insert into wise_enrollment values('12WH1A0547','JSI','PASSED','1.49');
+insert into wise_enrollment values('12WH1A0548','JSI','PASSED','0.49');
+insert into wise_enrollment values('12WH1A0549','JSI','PASSED','11.5');
+insert into wise_enrollment values('12WH1A0550','JSI','PASSED','7');
+insert into wise_enrollment values('12WH1A0551','JSI','PASSED','3.99');
+insert into wise_enrollment values('12WH1A0552','JSI','PASSED','10');
+insert into wise_enrollment values('12WH1A0553','JSI','PASSED','4.5');
+insert into wise_enrollment values('12WH1A0554','JSI','PASSED','13.5');
+insert into wise_enrollment values('12WH1A0555','JSI','PASSED','26');
+insert into wise_enrollment values('12WH1A0556','JSI','PASSED','4.99');
+insert into wise_enrollment values('12WH1A0557','JSI','PASSED','16');
+insert into wise_enrollment values('12WH1A0558','JSI','PASSED','12.99');
+insert into wise_enrollment values('12WH1A0559','JSI','PASSED','8');
+insert into wise_enrollment values('12WH1A0560','JSI','PASSED','-0.02');
+insert into wise_enrollment values('12WH1A0501','FOP','PASSED','112');
+insert into wise_enrollment values('12WH1A0502','FOP','PASSED','22');
+insert into wise_enrollment values('12WH1A0503','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0504','FOP','PASSED','109');
+insert into wise_enrollment values('12WH1A0505','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0506','FOP','PASSED','3');
+insert into wise_enrollment values('12WH1A0507','FOP','PASSED','47');
+insert into wise_enrollment values('12WH1A0508','FOP','PASSED','87');
+insert into wise_enrollment values('12WH1A0509','FOP','PASSED','49');
+insert into wise_enrollment values('12WH1A0510','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0511','FOP','PASSED','22');
+insert into wise_enrollment values('12WH1A0512','FOP','PASSED','55');
+insert into wise_enrollment values('12WH1A0513','FOP','PASSED','60');
+insert into wise_enrollment values('12WH1A0514','FOP','PASSED','60');
+insert into wise_enrollment values('12WH1A0515','FOP','PASSED','2');
+insert into wise_enrollment values('12WH1A0516','FOP','PASSED','10');
+insert into wise_enrollment values('12WH1A0517','FOP','PASSED','30');
+insert into wise_enrollment values('12WH1A0519','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0520','FOP','PASSED','28');
+insert into wise_enrollment values('12WH1A0521','FOP','PASSED','40');
+insert into wise_enrollment values('12WH1A0522','FOP','PASSED','4');
+insert into wise_enrollment values('12WH1A0523','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0524','FOP','PASSED','62');
+insert into wise_enrollment values('12WH1A0525','FOP','PASSED','36');
+insert into wise_enrollment values('12WH1A0526','FOP','PASSED','68');
+insert into wise_enrollment values('12WH1A0527','FOP','PASSED','51');
+insert into wise_enrollment values('12WH1A0528','FOP','PASSED','12');
+insert into wise_enrollment values('12WH1A0529','FOP','PASSED','52');
+insert into wise_enrollment values('12WH1A0530','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0531','FOP','PASSED','44');
+insert into wise_enrollment values('12WH1A0532','FOP','PASSED','41');
+insert into wise_enrollment values('12WH1A0533','FOP','PASSED','39');
+insert into wise_enrollment values('12WH1A0534','FOP','PASSED','45');
+insert into wise_enrollment values('12WH1A0535','FOP','PASSED','64');
+insert into wise_enrollment values('12WH1A0536','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0537','FOP','PASSED','27');
+insert into wise_enrollment values('12WH1A0538','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0539','FOP','PASSED','6');
+insert into wise_enrollment values('12WH1A0540','FOP','PASSED','37');
+insert into wise_enrollment values('12WH1A0541','FOP','PASSED','100');
+insert into wise_enrollment values('12WH1A0543','FOP','PASSED','54');
+insert into wise_enrollment values('12WH1A0544','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0545','FOP','PASSED','6');
+insert into wise_enrollment values('12WH1A0546','FOP','PASSED','72');
+insert into wise_enrollment values('12WH1A0547','FOP','PASSED','2');
+insert into wise_enrollment values('12WH1A0548','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0549','FOP','PASSED','48');
+insert into wise_enrollment values('12WH1A0550','FOP','PASSED','19');
+insert into wise_enrollment values('12WH1A0551','FOP','PASSED','12');
+insert into wise_enrollment values('12WH1A0552','FOP','PASSED','0');
+insert into wise_enrollment values('12WH1A0553','FOP','PASSED','18');
+insert into wise_enrollment values('12WH1A0554','FOP','PASSED','39');
+insert into wise_enrollment values('12WH1A0555','FOP','PASSED','97');
+insert into wise_enrollment values('12WH1A0556','FOP','PASSED','4');
+insert into wise_enrollment values('12WH1A0557','FOP','PASSED','50');
+insert into wise_enrollment values('12WH1A0558','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0559','FOP','PASSED','8');
+insert into wise_enrollment values('12WH1A0501','EAD','PASSED','59.9');
+insert into wise_enrollment values('12WH1A0501','EAD','PASSED','16.1');
+insert into wise_enrollment values('12WH1A0502','EAD','PASSED','50.15');
+insert into wise_enrollment values('12WH1A0504','EAD','PASSED','51.5');
+insert into wise_enrollment values('12WH1A0507','EAD','PASSED','68.1');
+insert into wise_enrollment values('12WH1A0508','EAD','PASSED','23.45');
+insert into wise_enrollment values('12WH1A0509','EAD','PASSED','55.7');
+insert into wise_enrollment values('12WH1A0511','EAD','PASSED','69.65');
+insert into wise_enrollment values('12WH1A0512','EAD','PASSED','58.85');
+insert into wise_enrollment values('12WH1A0513','EAD','PASSED','52.25');
+insert into wise_enrollment values('12WH1A0514','EAD','PASSED','67.6');
+insert into wise_enrollment values('12WH1A0516','EAD','PASSED','34.45');
+insert into wise_enrollment values('12WH1A0517','EAD','PASSED','14');
+insert into wise_enrollment values('12WH1A0520','EAD','PASSED','9.1');
+insert into wise_enrollment values('12WH1A0521','EAD','PASSED','27.35');
+insert into wise_enrollment values('12WH1A0524','EAD','PASSED','56.45');
+insert into wise_enrollment values('12WH1A0525','EAD','PASSED','49.9');
+insert into wise_enrollment values('12WH1A0526','EAD','PASSED','92.15');
+insert into wise_enrollment values('12WH1A0529','EAD','PASSED','53.35');
+insert into wise_enrollment values('12WH1A0531','EAD','PASSED','48.9');
+insert into wise_enrollment values('12WH1A0532','EAD','PASSED','45.2');
+insert into wise_enrollment values('12WH1A0533','EAD','PASSED','45.95');
+insert into wise_enrollment values('12WH1A0534','EAD','PASSED','23.2');
+insert into wise_enrollment values('12WH1A0535','EAD','PASSED','53.3');
+insert into wise_enrollment values('12WH1A0537','EAD','PASSED','14');
+insert into wise_enrollment values('12WH1A0539','EAD','PASSED','52.6');
+insert into wise_enrollment values('12WH1A0540','EAD','PASSED','39.5');
+insert into wise_enrollment values('12WH1A0541','EAD','PASSED','65.75');
+insert into wise_enrollment values('12WH1A0543','EAD','PASSED','45.2');
+insert into wise_enrollment values('12WH1A0546','EAD','PASSED','51.25');
+insert into wise_enrollment values('12WH1A0549','EAD','PASSED','50.65');
+insert into wise_enrollment values('12WH1A0550','EAD','PASSED','60.4');
+insert into wise_enrollment values('12WH1A0554','EAD','PASSED','69.85');
+insert into wise_enrollment values('12WH1A0555','EAD','PASSED','54.5');
+insert into wise_enrollment values('12WH1A0557','EAD','PASSED','45');
+insert into wise_enrollment values('12WH1A1201','JSI','PASSED','6.49');
+insert into wise_enrollment values('12WH1A1202','JSI','PASSED','10');
+insert into wise_enrollment values('12WH1A1203','JSI','PASSED','7.5');
+insert into wise_enrollment values('12WH1A1204','JSI','PASSED','7.99');
+insert into wise_enrollment values('12WH1A1205','JSI','FAILED','-0.02');
+insert into wise_enrollment values('12WH1A1206','JSI','PASSED','6');
+insert into wise_enrollment values('12WH1A1207','JSI','PASSED','2.99');
+insert into wise_enrollment values('12WH1A1208','JSI','PASSED','10');
+insert into wise_enrollment values('12WH1A1209','JSI','PASSED','10');
+insert into wise_enrollment values('12WH1A1210','JSI','PASSED','8.5');
+insert into wise_enrollment values('12WH1A1211','JSI','PASSED','9.5');
+insert into wise_enrollment values('12WH1A1212','JSI','PASSED','8.5');
+insert into wise_enrollment values('12WH1A1213','JSI','PASSED','6');
+insert into wise_enrollment values('12WH1A1214','JSI','PASSED','23');
+insert into wise_enrollment values('12WH1A1215','JSI','PASSED','13');
+insert into wise_enrollment values('12WH1A1216','JSI','PASSED','6');
+insert into wise_enrollment values('12WH1A1217','JSI','PASSED','3.99');
+insert into wise_enrollment values('12WH1A1218','JSI','PASSED','13.5');
+insert into wise_enrollment values('12WH1A1219','JSI','PASSED','12.5');
+insert into wise_enrollment values('12WH1A1220','JSI','PASSED','15.5');
+insert into wise_enrollment values('12WH1A1221','JSI','PASSED','9');
+insert into wise_enrollment values('12WH1A1222','JSI','PASSED','7');
+insert into wise_enrollment values('12WH1A1223','JSI','PASSED','8');
+insert into wise_enrollment values('12WH1A1224','JSI','PASSED','10.5');
+insert into wise_enrollment values('12WH1A1225','JSI','PASSED','8');
+insert into wise_enrollment values('12WH1A1226','JSI','PASSED','10');
+insert into wise_enrollment values('12WH1A1227','JSI','PASSED','3.99');
+insert into wise_enrollment values('12WH1A1228','JSI','PASSED','7.5');
+insert into wise_enrollment values('12WH1A1229','JSI','PASSED','9');
+insert into wise_enrollment values('12WH1A1230','JSI','PASSED','16');
+insert into wise_enrollment values('12WH1A1231','JSI','PASSED','9');
+insert into wise_enrollment values('12WH1A1232','JSI','PASSED','7.99');
+insert into wise_enrollment values('12WH1A1233','JSI','PASSED','10.5');
+insert into wise_enrollment values('12WH1A1234','JSI','PASSED','21.5');
+insert into wise_enrollment values('12WH1A1235','JSI','PASSED','10.99');
+insert into wise_enrollment values('12WH1A1236','JSI','PASSED','8');
+insert into wise_enrollment values('12WH1A1237','JSI','PASSED','3.99');
+insert into wise_enrollment values('12WH1A1238','JSI','PASSED','2.49');
+insert into wise_enrollment values('12WH1A1239','JSI','PASSED','4.5');
+insert into wise_enrollment values('12WH1A1240','JSI','PASSED','6');
+insert into wise_enrollment values('12WH1A1241','JSI','PASSED','16');
+insert into wise_enrollment values('12WH1A1242','JSI','PASSED','6');
+insert into wise_enrollment values('12WH1A1243','JSI','PASSED','5');
+insert into wise_enrollment values('12WH1A1244','JSI','FAILED','-0.02');
+insert into wise_enrollment values('12WH1A1245','JSI','PASSED','7.5');
+insert into wise_enrollment values('12WH1A1246','JSI','PASSED','4.5');
+insert into wise_enrollment values('12WH1A1247','JSI','PASSED','-0.01');
+insert into wise_enrollment values('12WH1A1248','JSI','PASSED','14.5');
+insert into wise_enrollment values('12WH1A1249','JSI','PASSED','11');
+insert into wise_enrollment values('12WH1A1250','JSI','PASSED','8.5');
+insert into wise_enrollment values('12WH1A1251','JSI','PASSED','7.5');
+insert into wise_enrollment values('12WH1A1252','JSI','PASSED','8.5');
+insert into wise_enrollment values('12WH1A1253','JSI','PASSED','7');
+insert into wise_enrollment values('12WH1A1254','JSI','PASSED','9.5');
+insert into wise_enrollment values('12WH1A1255','JSI','PASSED','9');
+insert into wise_enrollment values('12WH1A1256','JSI','PASSED','18');
+insert into wise_enrollment values('12WH1A1201','FOP','PASSED','27');
+insert into wise_enrollment values('12WH1A1202','FOP','PASSED','35');
+insert into wise_enrollment values('12WH1A1203','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1204','FOP','PASSED','24');
+insert into wise_enrollment values('12WH1A1206','FOP','PASSED','28');
+insert into wise_enrollment values('12WH1A1207','FOP','PASSED','6');
+insert into wise_enrollment values('12WH1A1208','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1209','FOP','PASSED','43');
+insert into wise_enrollment values('12WH1A1210','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1211','FOP','PASSED','56');
+insert into wise_enrollment values('12WH1A1212','FOP','PASSED','18');
+insert into wise_enrollment values('12WH1A1213','FOP','PASSED','39');
+insert into wise_enrollment values('12WH1A1214','FOP','PASSED','30');
+insert into wise_enrollment values('12WH1A1215','FOP','PASSED','22');
+insert into wise_enrollment values('12WH1A1216','FOP','PASSED','11');
+insert into wise_enrollment values('12WH1A1217','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1218','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1219','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1220','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1221','FOP','PASSED','4');
+insert into wise_enrollment values('12WH1A1222','FOP','PASSED','53');
+insert into wise_enrollment values('12WH1A1223','FOP','PASSED','20');
+insert into wise_enrollment values('12WH1A1224','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1225','FOP','PASSED','13');
+insert into wise_enrollment values('12WH1A1226','FOP','PASSED','27');
+insert into wise_enrollment values('12WH1A1227','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1228','FOP','PASSED','10');
+insert into wise_enrollment values('12WH1A1229','FOP','PASSED','2');
+insert into wise_enrollment values('12WH1A1230','FOP','PASSED','57');
+insert into wise_enrollment values('12WH1A1231','FOP','PASSED','27');
+insert into wise_enrollment values('12WH1A1232','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1233','FOP','PASSED','50');
+insert into wise_enrollment values('12WH1A1234','FOP','PASSED','69');
+insert into wise_enrollment values('12WH1A1235','FOP','PASSED','35');
+insert into wise_enrollment values('12WH1A1236','FOP','PASSED','63');
+insert into wise_enrollment values('12WH1A1237','FOP','PASSED','7');
+insert into wise_enrollment values('12WH1A1238','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1239','FOP','PASSED','0');
+insert into wise_enrollment values('12WH1A1240','FOP','PASSED','6');
+insert into wise_enrollment values('12WH1A1241','FOP','PASSED','25');
+insert into wise_enrollment values('12WH1A1242','FOP','PASSED','0');
+insert into wise_enrollment values('12WH1A1243','FOP','PASSED','7');
+insert into wise_enrollment values('12WH1A1244','FOP','PASSED','18');
+insert into wise_enrollment values('12WH1A1245','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A1246','FOP','PASSED','13');
+insert into wise_enrollment values('12WH1A1247','FOP','PASSED','20');
+insert into wise_enrollment values('12WH1A1248','FOP','PASSED','45');
+insert into wise_enrollment values('12WH1A1249','FOP','PASSED','36');
+insert into wise_enrollment values('12WH1A1250','FOP','PASSED','25');
+insert into wise_enrollment values('12WH1A1251','FOP','PASSED','34');
+insert into wise_enrollment values('12WH1A1252','FOP','PASSED','8');
+insert into wise_enrollment values('12WH1A1253','FOP','PASSED','8');
+insert into wise_enrollment values('12WH1A1254','FOP','PASSED','56');
+insert into wise_enrollment values('12WH1A1255','FOP','PASSED','0');
+insert into wise_enrollment values('12WH1A1256','FOP','PASSED','11');
+insert into wise_enrollment values('12WH1A1201','EAD','PASSED','72.3');
+insert into wise_enrollment values('12WH1A1202','EAD','PASSED','59.85');
+insert into wise_enrollment values('12WH1A1204','EAD','PASSED','45.1');
+insert into wise_enrollment values('12WH1A1206','EAD','PASSED','61.65');
+insert into wise_enrollment values('12WH1A1209','EAD','PASSED','58');
+insert into wise_enrollment values('12WH1A1211','EAD','PASSED','38.95');
+insert into wise_enrollment values('12WH1A1213','EAD','PASSED','80.8');
+insert into wise_enrollment values('12WH1A1214','EAD','PASSED','47');
+insert into wise_enrollment values('12WH1A1215','EAD','PASSED','13.3');
+insert into wise_enrollment values('12WH1A1222','EAD','PASSED','44.8');
+insert into wise_enrollment values('12WH1A1223','EAD','PASSED','45.9');
+insert into wise_enrollment values('12WH1A1226','EAD','PASSED','51.9');
+insert into wise_enrollment values('12WH1A1228','EAD','PASSED','51.75');
+insert into wise_enrollment values('12WH1A1230','EAD','PASSED','64');
+insert into wise_enrollment values('12WH1A1231','EAD','PASSED','15.05');
+insert into wise_enrollment values('12WH1A1233','EAD','PASSED','63.5');
+insert into wise_enrollment values('12WH1A1234','EAD','PASSED','77.95');
+insert into wise_enrollment values('12WH1A1235','EAD','PASSED','29.9');
+insert into wise_enrollment values('12WH1A1236','EAD','PASSED','59.85');
+insert into wise_enrollment values('12WH1A1237','EAD','PASSED','42.65');
+insert into wise_enrollment values('12WH1A1241','EAD','PASSED','56.8');
+insert into wise_enrollment values('12WH1A1247','EAD','PASSED','53.85');
+insert into wise_enrollment values('12WH1A1248','EAD','PASSED','60.45');
+insert into wise_enrollment values('12WH1A1249','EAD','PASSED','82');
+insert into wise_enrollment values('12WH1A1250','EAD','PASSED','65.45');
+insert into wise_enrollment values('12WH1A1251','EAD','PASSED','71');
+insert into wise_enrollment values('12WH1A1254','EAD','PASSED','56.95');
+insert into wise_enrollment values('12WH1A1256','EAD','PASSED','60.8');
+insert into wise_enrollment values('12WH1A0201','JSI','PASSED','6.49');
+insert into wise_enrollment values('12WH1A0202','JSI','PASSED','10.5');
+insert into wise_enrollment values('12WH1A0203','JSI','PASSED','14.5');
+insert into wise_enrollment values('12WH1A0204','JSI','PASSED','3.99');
+insert into wise_enrollment values('12WH1A0205','JSI','PASSED','1.99');
+insert into wise_enrollment values('12WH1A0206','JSI','PASSED','3.99');
+insert into wise_enrollment values('12WH1A0207','JSI','PASSED','20');
+insert into wise_enrollment values('12WH1A0208','JSI','PASSED','11.5');
+insert into wise_enrollment values('12WH1A0209','JSI','PASSED','8.5');
+insert into wise_enrollment values('12WH1A0210','JSI','PASSED','-0.02');
+insert into wise_enrollment values('12WH1A0211','JSI','PASSED','19');
+insert into wise_enrollment values('12WH1A0212','JSI','PASSED','11');
+insert into wise_enrollment values('12WH1A0213','JSI','PASSED','7.99');
+insert into wise_enrollment values('12WH1A0214','JSI','PASSED','20.5');
+insert into wise_enrollment values('12WH1A0215','JSI','PASSED','8.99');
+insert into wise_enrollment values('12WH1A0216','JSI','PASSED','5.99');
+insert into wise_enrollment values('12WH1A0217','JSI','PASSED','5');
+insert into wise_enrollment values('12WH1A0218','JSI','PASSED','17');
+insert into wise_enrollment values('12WH1A0219','JSI','PASSED','11');
+insert into wise_enrollment values('12WH1A0220','JSI','PASSED','10');
+insert into wise_enrollment values('12WH1A0221','JSI','PASSED','3.99');
+insert into wise_enrollment values('12WH1A0222','JSI','PASSED','4.49');
+insert into wise_enrollment values('12WH1A0223','JSI','PASSED','5');
+insert into wise_enrollment values('12WH1A0224','JSI','PASSED','8');
+insert into wise_enrollment values('12WH1A0225','JSI','PASSED','10');
+insert into wise_enrollment values('12WH1A0226','JSI','PASSED','11.5');
+insert into wise_enrollment values('12WH1A0227','JSI','PASSED','5.5');
+insert into wise_enrollment values('12WH1A0228','JSI','PASSED','7.5');
+insert into wise_enrollment values('12WH1A0229','JSI','PASSED','9');
+insert into wise_enrollment values('12WH1A0230','JSI','PASSED','8.5');
+insert into wise_enrollment values('12WH1A0231','JSI','PASSED','1.99');
+insert into wise_enrollment values('12WH1A0232','JSI','PASSED','3.49');
+insert into wise_enrollment values('12WH1A0233','JSI','PASSED','9.5');
+insert into wise_enrollment values('12WH1A0234','JSI','PASSED','22');
+insert into wise_enrollment values('12WH1A0235','JSI','PASSED','2.49');
+insert into wise_enrollment values('12WH1A0236','JSI','PASSED','6.99');
+insert into wise_enrollment values('12WH1A0237','JSI','PASSED','8.5');
+insert into wise_enrollment values('12WH1A0238','JSI','PASSED','12');
+insert into wise_enrollment values('12WH1A0239','JSI','PASSED','1.99');
+insert into wise_enrollment values('12WH1A0240','JSI','PASSED','4.5');
+insert into wise_enrollment values('12WH1A0241','JSI','PASSED','-0.02');
+insert into wise_enrollment values('12WH1A0242','JSI','PASSED','9.5');
+insert into wise_enrollment values('12WH1A0243','JSI','PASSED','2.49');
+insert into wise_enrollment values('12WH1A0244','JSI','PASSED','2.49');
+insert into wise_enrollment values('12WH1A0245','JSI','PASSED','4.5');
+insert into wise_enrollment values('12WH1A0246','JSI','PASSED','2.99');
+insert into wise_enrollment values('12WH1A0247','JSI','PASSED','10.5');
+insert into wise_enrollment values('12WH1A0248','JSI','PASSED','11.5');
+insert into wise_enrollment values('12WH1A0249','JSI','PASSED','14');
+insert into wise_enrollment values('12WH1A0250','JSI','PASSED','12.5');
+insert into wise_enrollment values('12WH1A0251','JSI','PASSED','19.5');
+insert into wise_enrollment values('12WH1A0252','JSI','PASSED','13');
+insert into wise_enrollment values('12WH1A0253','JSI','PASSED','10.5');
+insert into wise_enrollment values('12WH1A0254','JSI','PASSED','10.5');
+insert into wise_enrollment values('12WH1A0255','JSI','PASSED','9.5');
+insert into wise_enrollment values('12WH1A0256','JSI','PASSED','16.5');
+insert into wise_enrollment values('12WH1A0201','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0202','FOP','PASSED','46');
+insert into wise_enrollment values('12WH1A0203','FOP','PASSED','45');
+insert into wise_enrollment values('12WH1A0204','FOP','PASSED','26');
+insert into wise_enrollment values('12WH1A0205','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0206','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0207','FOP','PASSED','63');
+insert into wise_enrollment values('12WH1A0208','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0209','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0211','FOP','PASSED','63');
+insert into wise_enrollment values('12WH1A0212','FOP','PASSED','52');
+insert into wise_enrollment values('12WH1A0213','FOP','PASSED','21');
+insert into wise_enrollment values('12WH1A0214','FOP','PASSED','75');
+insert into wise_enrollment values('12WH1A0215','FOP','PASSED','9');
+insert into wise_enrollment values('12WH1A0216','FOP','PASSED','17');
+insert into wise_enrollment values('12WH1A0217','FOP','PASSED','6');
+insert into wise_enrollment values('12WH1A0218','FOP','PASSED','40');
+insert into wise_enrollment values('12WH1A0219','FOP','PASSED','63');
+insert into wise_enrollment values('12WH1A0220','FOP','PASSED','33');
+insert into wise_enrollment values('12WH1A0221','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0222','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0223','FOP','PASSED','2');
+insert into wise_enrollment values('12WH1A0224','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0225','FOP','PASSED','4');
+insert into wise_enrollment values('12WH1A0226','FOP','PASSED','36');
+insert into wise_enrollment values('12WH1A0227','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0228','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0229','FOP','PASSED','31');
+insert into wise_enrollment values('12WH1A0230','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0231','FOP','PASSED','2');
+insert into wise_enrollment values('12WH1A0232','FOP','PASSED','12');
+insert into wise_enrollment values('12WH1A0233','FOP','PASSED','35');
+insert into wise_enrollment values('12WH1A0234','FOP','PASSED','14');
+insert into wise_enrollment values('12WH1A0235','FOP','PASSED','33');
+insert into wise_enrollment values('12WH1A0236','FOP','PASSED','35');
+insert into wise_enrollment values('12WH1A0237','FOP','PASSED','16');
+insert into wise_enrollment values('12WH1A0238','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0239','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0240','FOP','PASSED','7');
+insert into wise_enrollment values('12WH1A0242','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0243','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0244','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0245','FOP','PASSED','6');
+insert into wise_enrollment values('12WH1A0246','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0247','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0248','FOP','PASSED','44');
+insert into wise_enrollment values('12WH1A0249','FOP','PASSED','35');
+insert into wise_enrollment values('12WH1A0250','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0251','FOP','PASSED','38');
+insert into wise_enrollment values('12WH1A0252','FOP','PASSED','32');
+insert into wise_enrollment values('12WH1A0253','FOP','PASSED','35');
+insert into wise_enrollment values('12WH1A0254','FOP','PASSED','32');
+insert into wise_enrollment values('12WH1A0255','FOP','PASSED','42');
+insert into wise_enrollment values('12WH1A0256','FOP','PASSED','35');
+insert into wise_enrollment values('12WH1A0202','EAD','PASSED','49.9');
+insert into wise_enrollment values('12WH1A0203','EAD','PASSED','53.75');
+insert into wise_enrollment values('12WH1A0204','EAD','PASSED','43.25');
+insert into wise_enrollment values('12WH1A0207','EAD','PASSED','22.6');
+insert into wise_enrollment values('12WH1A0211','EAD','PASSED','47.05');
+insert into wise_enrollment values('12WH1A0212','EAD','PASSED','40.1');
+insert into wise_enrollment values('12WH1A0213','EAD','PASSED','12.95');
+insert into wise_enrollment values('12WH1A0214','EAD','PASSED','44.4');
+insert into wise_enrollment values('12WH1A0218','EAD','PASSED','54.95');
+insert into wise_enrollment values('12WH1A0219','EAD','PASSED','51.85');
+insert into wise_enrollment values('12WH1A0220','EAD','PASSED','51.2');
+insert into wise_enrollment values('12WH1A0226','EAD','PASSED','53');
+insert into wise_enrollment values('12WH1A0229','EAD','PASSED','35.25');
+insert into wise_enrollment values('12WH1A0233','EAD','PASSED','38.85');
+insert into wise_enrollment values('12WH1A0235','EAD','PASSED','30.35');
+insert into wise_enrollment values('12WH1A0236','EAD','PASSED','53.1');
+insert into wise_enrollment values('12WH1A0248','EAD','PASSED','53.7');
+insert into wise_enrollment values('12WH1A0249','EAD','PASSED','48.2');
+insert into wise_enrollment values('12WH1A0251','EAD','PASSED','53.4');
+insert into wise_enrollment values('12WH1A0252','EAD','PASSED','62');
+insert into wise_enrollment values('12WH1A0253','EAD','PASSED','8.75');
+insert into wise_enrollment values('12WH1A0254','EAD','PASSED','13.3');
+insert into wise_enrollment values('12WH1A0255','EAD','PASSED','76.95');
+insert into wise_enrollment values('12WH1A0256','EAD','PASSED','77.95');
+insert into wise_enrollment values('12WH1A0401','JSI','PASSED','11.5');
+insert into wise_enrollment values('12WH1A0402','JSI','PASSED','12');
+insert into wise_enrollment values('12WH1A0403','JSI','PASSED','5');
+insert into wise_enrollment values('12WH1A0404','JSI','PASSED','7');
+insert into wise_enrollment values('12WH1A0405','JSI','PASSED','-0.02');
+insert into wise_enrollment values('12WH1A0406','JSI','PASSED','12');
+insert into wise_enrollment values('12WH1A0407','JSI','PASSED','24');
+insert into wise_enrollment values('12WH1A0408','JSI','PASSED','21.5');
+insert into wise_enrollment values('12WH1A0409','JSI','PASSED','5');
+insert into wise_enrollment values('12WH1A0410','JSI','PASSED','8.5');
+insert into wise_enrollment values('12WH1A0411','JSI','PASSED','3.99');
+insert into wise_enrollment values('12WH1A0412','JSI','PASSED','7');
+insert into wise_enrollment values('12WH1A0413','JSI','PASSED','9');
+insert into wise_enrollment values('12WH1A0414','JSI','PASSED','13.5');
+insert into wise_enrollment values('12WH1A0415','JSI','PASSED','11.5');
+insert into wise_enrollment values('12WH1A0416','JSI','PASSED','6.99');
+insert into wise_enrollment values('12WH1A0417','JSI','PASSED','16.5');
+insert into wise_enrollment values('12WH1A0418','JSI','PASSED','5');
+insert into wise_enrollment values('12WH1A0419','JSI','PASSED','6');
+insert into wise_enrollment values('12WH1A0420','JSI','PASSED','12.5');
+insert into wise_enrollment values('12WH1A0421','JSI','PASSED','20.5');
+insert into wise_enrollment values('12WH1A0422','JSI','PASSED','9');
+insert into wise_enrollment values('12WH1A0423','JSI','PASSED','7.5');
+insert into wise_enrollment values('12WH1A0424','JSI','PASSED','14');
+insert into wise_enrollment values('12WH1A0425','JSI','PASSED','6');
+insert into wise_enrollment values('12WH1A0426','JSI','PASSED','4.99');
+insert into wise_enrollment values('12WH1A0427','JSI','PASSED','4.99');
+insert into wise_enrollment values('12WH1A0428','JSI','PASSED','6.5');
+insert into wise_enrollment values('12WH1A0429','JSI','PASSED','3.99');
+insert into wise_enrollment values('12WH1A0430','JSI','PASSED','6.5');
+insert into wise_enrollment values('12WH1A0431','JSI','PASSED','9.5');
+insert into wise_enrollment values('12WH1A0432','JSI','PASSED','16.5');
+insert into wise_enrollment values('12WH1A0433','JSI','PASSED','9.99');
+insert into wise_enrollment values('12WH1A0434','JSI','PASSED','6.5');
+insert into wise_enrollment values('12WH1A0435','JSI','PASSED','17.5');
+insert into wise_enrollment values('12WH1A0436','JSI','PASSED','12.5');
+insert into wise_enrollment values('12WH1A0437','JSI','PASSED','0.49');
+insert into wise_enrollment values('12WH1A0438','JSI','PASSED','9');
+insert into wise_enrollment values('12WH1A0439','JSI','PASSED','7');
+insert into wise_enrollment values('12WH1A0440','JSI','PASSED','10');
+insert into wise_enrollment values('12WH1A0441','JSI','PASSED','10.5');
+insert into wise_enrollment values('12WH1A0442','JSI','PASSED','13');
+insert into wise_enrollment values('12WH1A0443','JSI','PASSED','15');
+insert into wise_enrollment values('12WH1A0444','JSI','PASSED','22');
+insert into wise_enrollment values('12WH1A0445','JSI','PASSED','10.5');
+insert into wise_enrollment values('12WH1A0446','JSI','PASSED','12.5');
+insert into wise_enrollment values('12WH1A0447','JSI','PASSED','2.99');
+insert into wise_enrollment values('12WH1A0448','JSI','PASSED','14');
+insert into wise_enrollment values('12WH1A0449','JSI','PASSED','6');
+insert into wise_enrollment values('12WH1A0450','JSI','PASSED','15');
+insert into wise_enrollment values('12WH1A0451','JSI','PASSED','13.5');
+insert into wise_enrollment values('12WH1A0452','JSI','PASSED','9');
+insert into wise_enrollment values('12WH1A0453','JSI','PASSED','29');
+insert into wise_enrollment values('12WH1A0454','JSI','PASSED','-0.02');
+insert into wise_enrollment values('12WH1A0455','JSI','PASSED','7');
+insert into wise_enrollment values('12WH1A0456','JSI','PASSED','15');
+insert into wise_enrollment values('12WH1A0457','JSI','PASSED','17.5');
+insert into wise_enrollment values('12WH1A0458','JSI','PASSED','7.5');
+insert into wise_enrollment values('12WH1A0459','JSI','PASSED','32.5');
+insert into wise_enrollment values('12WH1A0460','JSI','PASSED','23.5');
+insert into wise_enrollment values('12WH1A0401','FOP','PASSED','28');
+insert into wise_enrollment values('12WH1A0402','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0403','FOP','PASSED','39');
+insert into wise_enrollment values('12WH1A0404','FOP','PASSED','6');
+insert into wise_enrollment values('12WH1A0406','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0407','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0408','FOP','PASSED','66');
+insert into wise_enrollment values('12WH1A0409','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0410','FOP','PASSED','23');
+insert into wise_enrollment values('12WH1A0411','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0412','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0413','FOP','PASSED','41');
+insert into wise_enrollment values('12WH1A0414','FOP','PASSED','56');
+insert into wise_enrollment values('12WH1A0415','FOP','PASSED','55');
+insert into wise_enrollment values('12WH1A0416','FOP','PASSED','8');
+insert into wise_enrollment values('12WH1A0417','FOP','PASSED','41');
+insert into wise_enrollment values('12WH1A0418','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0419','FOP','PASSED','19');
+insert into wise_enrollment values('12WH1A0420','FOP','PASSED','0');
+insert into wise_enrollment values('12WH1A0421','FOP','PASSED','52');
+insert into wise_enrollment values('12WH1A0422','FOP','PASSED','26');
+insert into wise_enrollment values('12WH1A0423','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0424','FOP','PASSED','21');
+insert into wise_enrollment values('12WH1A0425','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0426','FOP','PASSED','8');
+insert into wise_enrollment values('12WH1A0427','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0428','FOP','PASSED','29');
+insert into wise_enrollment values('12WH1A0429','FOP','PASSED','8');
+insert into wise_enrollment values('12WH1A0430','FOP','PASSED','2');
+insert into wise_enrollment values('12WH1A0431','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0432','FOP','PASSED','21');
+insert into wise_enrollment values('12WH1A0433','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0434','FOP','PASSED','25');
+insert into wise_enrollment values('12WH1A0435','FOP','PASSED','35');
+insert into wise_enrollment values('12WH1A0436','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0437','FOP','PASSED','0');
+insert into wise_enrollment values('12WH1A0438','FOP','PASSED','0');
+insert into wise_enrollment values('12WH1A0439','FOP','PASSED','0');
+insert into wise_enrollment values('12WH1A0440','FOP','PASSED','35');
+insert into wise_enrollment values('12WH1A0441','FOP','PASSED','47');
+insert into wise_enrollment values('12WH1A0442','FOP','PASSED','95');
+insert into wise_enrollment values('12WH1A0443','FOP','PASSED','26');
+insert into wise_enrollment values('12WH1A0444','FOP','PASSED','51');
+insert into wise_enrollment values('12WH1A0445','FOP','PASSED','33');
+insert into wise_enrollment values('12WH1A0446','FOP','PASSED','45');
+insert into wise_enrollment values('12WH1A0447','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0448','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0449','FOP','PASSED','9');
+insert into wise_enrollment values('12WH1A0450','FOP','PASSED','23');
+insert into wise_enrollment values('12WH1A0451','FOP','PASSED','30');
+insert into wise_enrollment values('12WH1A0452','FOP','PASSED','26');
+insert into wise_enrollment values('12WH1A0453','FOP','PASSED','123');
+insert into wise_enrollment values('12WH1A0455','FOP','PASSED','18');
+insert into wise_enrollment values('12WH1A0456','FOP','PASSED','48');
+insert into wise_enrollment values('12WH1A0457','FOP','PASSED','48');
+insert into wise_enrollment values('12WH1A0458','FOP','PASSED','');
+insert into wise_enrollment values('12WH1A0459','FOP','PASSED','75');
+insert into wise_enrollment values('12WH1A0460','FOP','PASSED','76');
+insert into wise_enrollment values('12WH1A0401','EAD','PASSED','25.05');
+insert into wise_enrollment values('12WH1A0403','EAD','PASSED','44.5');
+insert into wise_enrollment values('12WH1A0408','EAD','PASSED','64.7');
+insert into wise_enrollment values('12WH1A0410','EAD','PASSED','34.5');
+insert into wise_enrollment values('12WH1A0413','EAD','PASSED','34.4');
+insert into wise_enrollment values('12WH1A0414','EAD','PASSED','54.55');
+insert into wise_enrollment values('12WH1A0415','EAD','PASSED','70.65');
+insert into wise_enrollment values('12WH1A0417','EAD','PASSED','70.5');
+insert into wise_enrollment values('12WH1A0419','EAD','PASSED','70.9');
+insert into wise_enrollment values('12WH1A0421','EAD','PASSED','67.1');
+insert into wise_enrollment values('12WH1A0422','EAD','PASSED','12.25');
+insert into wise_enrollment values('12WH1A0428','EAD','PASSED','9.8');
+insert into wise_enrollment values('12WH1A0434','EAD','PASSED','16.35');
+insert into wise_enrollment values('12WH1A0440','EAD','PASSED','39.75');
+insert into wise_enrollment values('12WH1A0441','EAD','PASSED','58.65');
+insert into wise_enrollment values('12WH1A0442','EAD','PASSED','63.4');
+insert into wise_enrollment values('12WH1A0443','EAD','PASSED','71.45');
+insert into wise_enrollment values('12WH1A0444','EAD','PASSED','22.5');
+insert into wise_enrollment values('12WH1A0445','EAD','PASSED','52.9');
+insert into wise_enrollment values('12WH1A0446','EAD','PASSED','49.8');
+insert into wise_enrollment values('12WH1A0450','EAD','PASSED','16.1');
+insert into wise_enrollment values('12WH1A0452','EAD','PASSED','20.3');
+insert into wise_enrollment values('12WH1A0453','EAD','PASSED','75.7');
+insert into wise_enrollment values('12WH1A0456','EAD','PASSED','70.35');
+insert into wise_enrollment values('12WH1A0457','EAD','PASSED','84.65');
+insert into wise_enrollment values('12WH1A0459','EAD','PASSED','80.8');
+insert into wise_enrollment values('12WH1A0460','EAD','PASSED','64.8');
+
+
+select * from wise_enrollment;
+
++------------+----------+--------+-------+
+| rollno     | mod_code | status | marks |
++------------+----------+--------+-------+
+| 12WH1A0201 | JSI      | PASSED |     6 |
+| 12WH1A0202 | JSI      | PASSED |    11 |
+| 12WH1A0203 | JSI      | PASSED |    15 |
+| 12WH1A0204 | JSI      | PASSED |     4 |
+| 12WH1A0205 | JSI      | PASSED |     2 |
+| 12WH1A0206 | JSI      | PASSED |     4 |
+| 12WH1A0207 | JSI      | PASSED |    20 |
+| 12WH1A0208 | JSI      | PASSED |    12 |
+| 12WH1A0209 | JSI      | PASSED |     9 |
+| 12WH1A0210 | JSI      | FAILED |     0 |
+| 12WH1A0211 | JSI      | PASSED |    19 |
+| 12WH1A0212 | JSI      | PASSED |    11 |
+| 12WH1A0213 | JSI      | PASSED |     8 |
+| 12WH1A0214 | JSI      | PASSED |    21 |
+| 12WH1A0215 | JSI      | PASSED |     9 |
+| 12WH1A0216 | JSI      | PASSED |     6 |
+| 12WH1A0217 | JSI      | PASSED |     5 |
+| 12WH1A0218 | JSI      | PASSED |    17 |
+| 12WH1A0219 | JSI      | PASSED |    11 |
+| 12WH1A0220 | JSI      | PASSED |    10 |
+| 12WH1A0221 | JSI      | PASSED |     4 |
+| 12WH1A0222 | JSI      | PASSED |     4 |
+| 12WH1A0223 | JSI      | PASSED |     5 |
+| 12WH1A0224 | JSI      | PASSED |     8 |
+| 12WH1A0225 | JSI      | PASSED |    10 |
+| 12WH1A0226 | JSI      | PASSED |    12 |
+| 12WH1A0227 | JSI      | PASSED |     6 |
+| 12WH1A0228 | JSI      | PASSED |     8 |
+| 12WH1A0229 | JSI      | PASSED |     9 |
+| 12WH1A0230 | JSI      | PASSED |     9 |
+| 12WH1A0231 | JSI      | PASSED |     2 |
+| 12WH1A0232 | JSI      | PASSED |     3 |
+| 12WH1A0233 | JSI      | PASSED |    10 |
+| 12WH1A0234 | JSI      | PASSED |    22 |
+| 12WH1A0235 | JSI      | PASSED |     2 |
+| 12WH1A0236 | JSI      | PASSED |     7 |
+| 12WH1A0237 | JSI      | PASSED |     9 |
+| 12WH1A0238 | JSI      | PASSED |    12 |
+| 12WH1A0239 | JSI      | PASSED |     2 |
+| 12WH1A0240 | JSI      | PASSED |     5 |
+| 12WH1A0241 | JSI      | FAILED |     0 |
+| 12WH1A0242 | JSI      | PASSED |    10 |
+| 12WH1A0243 | JSI      | PASSED |     2 |
+| 12WH1A0244 | JSI      | PASSED |     2 |
+| 12WH1A0245 | JSI      | PASSED |     5 |
+| 12WH1A0246 | JSI      | PASSED |     3 |
+| 12WH1A0247 | JSI      | PASSED |    11 |
+| 12WH1A0248 | JSI      | PASSED |    12 |
+| 12WH1A0249 | JSI      | PASSED |    14 |
+| 12WH1A0250 | JSI      | PASSED |    13 |
+| 12WH1A0251 | JSI      | PASSED |    20 |
+| 12WH1A0252 | JSI      | PASSED |    13 |
+| 12WH1A0253 | JSI      | PASSED |    11 |
+| 12WH1A0254 | JSI      | PASSED |    11 |
+| 12WH1A0255 | JSI      | PASSED |    10 |
+| 12WH1A0256 | JSI      | PASSED |    17 |
++------------+----------+--------+-------+
+
+
+
+create table wise_module(mod_code char(5), mod_num char(2), mod_name char(40), year char(2));
+
+desc wise_module;
+
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| mod_code | char(5)  | YES  |     | NULL    |       |
+| mod_num  | char(2)  | YES  |     | NULL    |       |
+| mod_name | char(40) | YES  |     | NULL    |       |
+| year     | char(2)  | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+
+insert into WISE_module values('JSI','1','Just Solve it','12');
+insert into WISE_module values('FOP','2','Foundation of programs','13');
+insert into WISE_module values('EAD','3','Enterprise Application Development','13');
+insert into WISE_module values('BPT','4','Development of Best Practises & tools','14');
+insert into WISE_module values('CFP','5','Contributing to Global FOSS Projects','14');
+insert into WISE_module values('SNS','6','Social Networking Sites','');
+insert into WISE_module values('BDC','7','Big Data & The Cloud','');
+insert into WISE_module values('MPW','8','Mini Project Work','');
+insert into WISE_module values('PCP','1','Professional C Programming','13');
+insert into WISE_module values('MPP','2','Modern Programming: Python','');
+insert into WISE_module values('BWA','3','Building SImple Web Applications','');
+insert into WISE_module values('EJD','4','Enterprise Java Development','');
+
+select * from wise_module;
+
++----------+---------+---------------------------------------+------+
+| mod_code | mod_num | mod_name                              | year |
++----------+---------+---------------------------------------+------+
+| JSI      | 1       | Just Solve it                         | 12   |
+| FOP      | 2       | Foundation of programs                | 13   |
+| EAD      | 3       | Enterprise Application Development    | 13   |
+| BPT      | 4       | Development of Best Practises & tools | 14   |
+| CFP      | 5       | Contributing to Global FOSS Projects  | 14   |
+| SNS      | 6       | Social Networking Sites               |      |
+| BDC      | 7       | Big Data & The Cloud                  |      |
+| MPW      | 8       | Mini Project Work                     |      |
+| PCP      | 1       | Professional C Programming            | 13   |
+| MPP      | 2       | Modern Programming: Python            |      |
+| BWA      | 3       | Building SImple Web Applications      |      |
+| EJD      | 4       | Enterprise Java Development           |      |
++----------+---------+---------------------------------------+------+
+
+
+
